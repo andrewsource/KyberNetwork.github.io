@@ -69,7 +69,7 @@ background: linear-gradient(to right, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0
 footer{
   background-color: #00983A;
   color: white;
-  padding: 80px;
+  padding: 40px 80px;
   color : #F6F6F6;
   margin-top: 50px;
 }
@@ -165,9 +165,19 @@ color : #1D1D1B;
   font-size : 26px;
 }
 
+.about-value strong {
+  font-weight: 700;
+  font-size: 17px;
+}
+
 .about-value {
     margin-top: 80px;
     padding-right: 100px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: white;
 }
 
 .about-value >div >div{
@@ -188,11 +198,13 @@ color : #1D1D1B;
 }
 .about-write{
   text-align: right;
-  padding-right: 50px;  
+  padding-right: 50px;
 }
-.about-write span{
+.about-write span a {
   padding: 10px;
   border-bottom: 3px solid #00983A;
+  color: black;
+  text-decoration: none;
   font-weight : bold;
   font-size : 26px;
   text-align: center;
@@ -240,19 +252,20 @@ color : #1D1D1B;
   margin-bottom: 80px;
 }
 
-
 .team-title strong{
   font-size : 26px;
 }
 .member-info{
   max-width: 1200px;  
 }
-.team-item >div:first-child{
+
+.team-item img {
   width: 220px;
   height: 220px;
   border-radius: 220px;
-  background-color: #00983A;
-  margin: 0 auto;
+  border-width: 2px;
+  border-color: #00983A;
+  margin: auto auto;
 }
 
 .team-item{
@@ -425,12 +438,11 @@ margin-bottom: 80px;
 }
 .contact-info{
   margin-top: 17px;
-  margin-left: 35px;
   padding-left: 10px;
   border-left: 4px solid;
 }
 .copyright {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .reserve-info{
   text-align: right
