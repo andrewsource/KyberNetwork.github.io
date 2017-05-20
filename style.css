@@ -235,6 +235,10 @@ color : #1D1D1B;
     text-align-last: center;
 }
 
+.team-item div.bio {
+  text-align-last: left;
+}
+
 .app-item >div:first-child{
   width: 100%;
   height: 260px;
@@ -471,4 +475,34 @@ margin-bottom: 80px;
 }
 .subscribe-top .icon-play:after{
   margin-left: -20px
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  display: none;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+  display: inline;
+}
+
+.read-more-state ~ .member-bio .read-more-trigger:before {
+    content: '... Read more';
+}
+
+.read-more-state:checked ~ .member-bio .read-more-trigger:before {
+    content: ' Hide';
+}
+
+.read-more-trigger {
+  color: #00983a;
 }
