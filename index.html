@@ -30,11 +30,11 @@
 					</div>
 					<div class="header-bottom">
 						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Applications</a></li>
-							<li><a href="#">Roadmap</a></li>
-							<li><a href="#">The team</a></li>
+							<li><a href="/">Home</a></li>
+							<li><a href="#about-section">About</a></li>
+							<li><a href="#application-section">Applications</a></li>
+							<li><a href="#roadmap-section">Roadmap</a></li>
+							<li><a href="#team-section">The team</a></li>
 						</ul>
 					</div>
 				</div>
@@ -56,7 +56,7 @@
 				</div>
 			</div>
 			<div class="main-info">
-				<div class="main-about">
+				<div class="main-about" id="about-section">
 					<h2>About</h2>
 					<div class="row">
 						<div class="col-md-9 about-name">
@@ -101,20 +101,20 @@
 						</div>
 					</div>
 				</div>
-				<div class="main-app">
+				<div class="main-app" id="application-section">
 					<h2>Applications</h2>
 					<div class="row">
 						<div class="col-md-3 app-item">
 							<div></div>
 							<div>Exchange</div>
-							<div>
+							<div class="app-item-body">
 								Convert and exchange your tokens securely, instantly with us.
 							</div>
 						</div>
 						<div class="col-md-3 app-item">
 							<div></div>
 							<div>Proxy Payment</div>
-							<div>
+							<div class="app-item-body">
 								Pay to anyone in any token from your own token.
 								We'll do the conversion and forward the payment instantly.
 							</div>
@@ -122,53 +122,72 @@
 						<div class="col-md-3 app-item">
 							<div></div>
 							<div>Derivatives</div>
-							<div>
+							<div class="app-item-body">
 								Get your dividends from a DAO soon and worry about the price fluctuation? Hegde with us.
 							</div>
 						</div>
 						<div class="col-md-3 app-item">
 							<div></div>
 							<div>Cross-chain payments</div>
-							<div>
+							<div class="app-item-body">
 								We allow you to receive payments from Bitcoin and other cryptocurrencies in Ether.
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="main-plan">
+				<div class="main-plan" id="roadmap-section">
 					<h2>Our Roadmap</h2>
 					<div>
-						<div class="row plan-top">							
-							<div class="col-md-8">
-								<div class="plan-item plan-1 rotate-90">
-									Phase 1
-								</div>
-								<div class="plan-1-intro plan-intro">
-									Support trading and proxy payments between any token to and from Ether
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="plan-2 plan-item rotate-90">
-									Phase 2
-								</div>								
-							</div>
+						<div class="row plan-top">
+              <div class="plan-item plan-1">
+                <div class="rotate-90">
+                  Phase 1
+                </div>
+              </div>
+              <div class="plan-1-intro plan-intro">
+                Exchange and proxy payments between any tokens to and from Ether
+              </div>
+              <div class="plan-3 plan-item">
+                <div class="rotate-90">
+                  Phase 3
+                </div>
+              </div>
+              <div class="plan-3-intro plan-intro" style="margin-top: -53px;">
+                Support trading other financial instruments
+              </div>
+              <div style="clear: both;"></div>
 						</div>
 						<div class="plan-bar main-gradient"></div>
 						<div class="row plan-bottom">
-							<div class="col-md-10">
-								<div class="plan-item plan-3 rotate-90">
-									Phase 3
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="plan-4 plan-item rotate-90">
-									Phase 4
-								</div>
-							</div>
+              <div class="plan-item plan-0">
+                <div class="rotate-90">
+                  Phase 0
+                </div>
+              </div>
+              <div class="plan-1-intro plan-intro">
+                Launch on testnet
+              </div>
+              <div class="plan-item plan-2">
+                <div class="rotate-90">
+                  Phase 2
+                </div>
+              </div>
+              <div class="plan-1-intro plan-intro">
+                Support arbitrary token pairs
+              </div>
+              <div class="plan-4 plan-item">
+                <div class="rotate-90">
+                  Phase 4
+                </div>
+              </div>
+              <div class="plan-1-intro plan-intro">
+                Support cross-chain trading
+              </div>
+              <div style="clear: both;"></div>
 						</div>
 					</div>
 				</div>
-				<div class="main-team">
+				<div class="main-team" id="team-section">
 					<h2>The team</h2>
 					<div class="team-title">
             <div class="indicator">

@@ -55,6 +55,9 @@ background: linear-gradient(to right, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0
     max-width: 1200px;
     padding: 100px 20px 80px;
 }
+.main-title h2 {
+  font-size: 36px;
+}
 .main-title-wapper h1{
   font-size: 110px;
 }
@@ -139,10 +142,9 @@ color : #1D1D1B;
 }
 
 .about-name{
-   font-size : 85px;
-  line-height : 120px;
+  font-size : 62px;
+  line-height : 50px;
   padding-left: 60px;
-  
 }
 .about-intro div{
   width: 100%;
@@ -230,9 +232,13 @@ color : #1D1D1B;
 }
 .app-item >div,
 .team-item >div{
-   text-align: justify;
-    -moz-text-align-last: center;
-    text-align-last: center;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+
+.app-item div.app-item-body {
+  text-align-last: left;
 }
 
 .team-item div.bio {
@@ -240,9 +246,10 @@ color : #1D1D1B;
 }
 
 .app-item >div:first-child{
-  width: 100%;
-  height: 260px;
-  background-color: #00983A
+  width: 200px;
+  height: 200px;
+  background-color: #00983A;
+  margin: 0 auto;
 }
 .app-item >div:nth-child(2),
 .team-item >div:nth-child(2){
@@ -369,9 +376,11 @@ margin-bottom: 80px;
   width: 100%;
   border-radius: 20px;
 }
+
 .rotate-90{
   /* Safari */
 -webkit-transform: rotate(-90deg);
+-webkit-transform-origin: 0% 0%;
 
 /* Firefox */
 -moz-transform: rotate(-90deg);
@@ -381,23 +390,35 @@ margin-bottom: 80px;
 
 /* Opera */
 -o-transform: rotate(-90deg);
-
+transform-origin: 0% 0%;
 }
+
 .plan-item{
   width: 150px;
-  position: relative;
   font-size: 18px;
 }
 .plan-top{
-  height: 115px;
   margin-top:80px;
+  margin-bottom: 7px;
 }
 .plan-bottom{
-  height: 115px;
-  margin-bottom: 30px;  
-  margin-top: 43px;
+  margin-top: 87px;
 }
-.plan-top .plan-item:before{
+.plan-bottom .plan-item {
+  float: left;
+  text-align: left;
+  margin-right: 30px;
+}
+.plan-bottom .plan-intro {
+  float: left;
+  margin-left: -140px;
+  margin-top: -70px;
+}
+.plan-top .plan-intro {
+  margin-top: -75px;
+  margin-left: -110px;
+}
+.plan-top .plan-item div:before{
   border-bottom: 10px solid transparent;
     border-left: 15px solid black;
     border-top: 10px solid transparent;
@@ -409,7 +430,7 @@ margin-bottom: 80px;
     position: absolute;
     width: 0;
 }
-.plan-bottom .plan-item:after{
+.plan-bottom .plan-item div:after{
   border-bottom: 10px solid transparent;
     border-right: 15px solid black;
     border-top: 10px solid transparent;
@@ -422,18 +443,22 @@ margin-bottom: 80px;
     width: 0;
 }
 .plan-1 {
-  left: 300px;
+  margin-left: 350px;
 }
 .plan-3 {
-  left: 750px;
+  margin-left: 250px;
 }
-.plan-intro{
-  position: relative;
+.plan-0 {
+  margin-left: 100px;
 }
-.plan-1-intro {
-    left: 401px;
-    top: -46px;
-    width: 150px;
+.plan-2 {
+  margin-left: 220px;
+}
+.plan-4 {
+  margin-left: 350px;
+}
+.plan-intro {
+  width: 150px;
 }
 .contact-text{
      font-weight : bold;
@@ -479,6 +504,10 @@ margin-bottom: 80px;
 
 .read-more-state {
   display: none;
+}
+
+div.plan-top > div {
+  float: left;
 }
 
 .read-more-target {
