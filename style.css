@@ -1,6 +1,6 @@
 *{
   font-family: 'Nunito', sans-serif;
-  font-size:13px;
+  font-size:16px;
 }
 
 header{
@@ -74,11 +74,11 @@ footer{
   margin-top: 50px;
 }
 
-.subcribe-box{
+.subscribe-box{
   text-align: right;
 }
 
-.subcribe-box input{
+.subscribe-box input{
   border: medium none;
     border-radius: 30px;
     color: black;
@@ -103,7 +103,7 @@ footer{
   color : #9D9D9C;
 }
 
-.subcribe-text{
+.subscribe-text{
     font-weight : bold;
     font-size: 25px;
     margin-bottom: 8px;
@@ -294,12 +294,12 @@ margin-bottom: 80px;
   
   border-left: 15px solid #00983A;
 }
-.subcribe-from >span{
+.subscribe-form >span{
   position: relative;
     top: 11px;
     margin-left: 5px;
 }
-.subcribe-from >span:after{
+.subscribe-form >span:after{
    margin-left: -19px;
     margin-top: 5px;
 }
@@ -425,9 +425,12 @@ margin-bottom: 80px;
 }
 .contact-info{
   margin-top: 17px;
-  margin-left: 50px;
+  margin-left: 35px;
   padding-left: 10px;
   border-left: 4px solid;
+}
+.copyright {
+  padding-top: 50px;
 }
 .reserve-info{
   text-align: right
@@ -435,14 +438,14 @@ margin-bottom: 80px;
 .footer-contact{
   padding-left: 50px
 }
-.subcribe-top{
+.subscribe-top{
   margin-top: 20px
 }
-.subcribe-top >span:first-child{
+.subscribe-top >span:first-child{
   font-size : 18px;
   color : #00983A;
 }
-.subcribe-top input{
+.subscribe-top input{
   background-color: #F6F6F6;
   border: none;
   padding: 5px 10px;
@@ -450,10 +453,10 @@ margin-bottom: 80px;
   width:380px   ;
   margin-left: 20px
 }
-.subcribe-top .icon-play{
+.subscribe-top .icon-play{
   position: absolute;
   margin-left: -30px
 }
-.subcribe-top .icon-play:after{
+.subscribe-top .icon-play:after{
   margin-left: -20px
 }
