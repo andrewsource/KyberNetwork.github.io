@@ -1,376 +1,479 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Kyber Network</title>
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-	</head>
-	<body>
-		<header>
-			<div class="header row">
-				<div class="col-md-4">
-					<img src="images/home_icon.png" />
-				</div>
-				<div class="col-md-8 header-link">
-					<div class="header-top">
-            <!--
-						<div>
-							<a href="#" id="change-language">
-								Change language
-							</a>	
-						</div>
-            -->
-						<div class="subscribe-top">
-							<span>Subscribe to Kyber.Network</span>
-							<span>
-
-                <!-- Begin MailChimp Signup Form -->
-                <div id="mc_embed_signup" style="display: inline-block;">
-                  <div class="subscribe-form">
-                    <form action="//network.us15.list-manage.com/subscribe/post?u=6b7b41e94cc1338541eeae656&amp;id=c832c80344" method="post" id="mc-embedded-subscribe-form-top" name="mc-embedded-subscribe-form-top" class="validate" target="_blank" novalidate>
-                      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                        <input type="text" name="b_6b7b41e94cc1338541eeae656_c832c80344" tabindex="-1" value="">
-                      </div>
-                      <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-submit" style="margin-left: -35px;">
-                        <div class="subscribe-submit"></div>
-                      </button>
-                    </form>
-                  </div>
+    <head>
+        <title>Kyber network</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header row">
+                <div class="col-sm-4 col-xs-2">
+                    <a href="#">
+                        <img class="home_logo" src="images/home_icon.png" />
+                    </a>
                 </div>
-                <!--End mc_embed_signup-->
-							</span>
-						</div>
-					</div>
-					<div class="header-bottom">
-						<ul>
-							<li><a href="/">Home</a></li>
-							<li><a href="#about-section">About</a></li>
-							<li><a href="#application-section">Applications</a></li>
-							<li><a href="#roadmap-section">Roadmap</a></li>
-							<li><a href="#team-section">The team</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
-		<div class="main-container">
-			<div class="main-title-wapper main-gradient">
-				<div class="main-title">
-					<div><h3>The next generation of on-chain<h3></div>
-					<div><h2>Exchange & Payment Service</h2></div>
-					<div class="row title-info">
-						<div class="col-sm-10">
-							Instantly exchange and convert your tokens <br>
-							High liquidity, no waiting time<br>
-							Blockchain-level security, no deposit is required
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="main-info">
-				<div class="main-about" id="about-section">
-					<h2>About KyberNetwork</h2>
-					<div class="row about-intro">
-						<div class="col-md-4 col-offset-8">
-							KyberNetwork is a new system which allows the exchange and conversion of digital assets.<br>
-							We provide rich payment APIs and a new contract wallet that allow anyone to seamlessly receive payments from any token. <br>
-							Users can also mitigate the risks of price fluctuations in the cryptocurrency world with our derivative trading.<br>
-						</div>
-					</div>
-				</div>
-        <div class="properties" id="property-section">
-          <h3>Properties</h3>
-          <div class="row about-value-content">
-            <div class="col-md-4">
-              <div>
-                <strong>High liquidity.</strong> We maintain a reserve of all tokens to provide high liquidity. Get your tokens instantly when you trade.
-              </div>
+                <div class="col-sm-8 col-xs-10 header-link">
+                    <div class="header-top">
+                        <!--
+                        <div>
+                            <a href="#" id="change-language">
+                                Change language
+                            </a>
+                        </div>
+                        -->
+                        <div class="subcribe-top">
+                            <span class="only-desktop">Subcribe to Kyber.Network</span>
+                            <span class="except-desktop">Subcribe</span>
+
+                            <div id="mc_embed_signup" style="display: inline-block;">
+                                <div class="subscribe-form">
+                                    <form action="//network.us15.list-manage.com/subscribe/post?u=6b7b41e94cc1338541eeae656&amp;id=c832c80344" method="post" id="mc-embedded-subscribe-form-top" name="mc-embedded-subscribe-form-top" class="validate" target="_blank" novalidate>
+                                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                            <input type="text" name="b_6b7b41e94cc1338541eeae656_c832c80344" tabindex="-1" value="">
+                                        </div>
+                                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-submit" style="margin-left: -35px;">
+                                            <span class="subscribe-submit"></span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--                                <input type="text" name="subribe-top" placeholder="enter your email here" />
+                                                            <span class="icon-play"></span>-->
+
+                        </div>
+                    </div>
+                    <div class="header-bottom">
+                        <div class="only-desktop">
+                            <ul>
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Applications</a></li>
+                                <li><a href="#">The plan</a></li>
+                                <li><a href="#">The team</a></li>
+                            </ul>
+                        </div>
+                        <div class="except-desktop">
+                            <div>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img style="width: 30px;" src="images/icon_menu.png" />
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Applications</a></li>
+                                    <li><a href="#">The plan</a></li>
+                                    <li><a href="#">The team</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+        <div class="main-container">
+            <div class="main-title-wapper main-gradient">
+                <div class="main-title">
+                    <div><h3>The next generation of on-chain</h3></div>
+                    <div><h2>Exchange & Payment Service</h2></div>
+                    <div class="row title-info">
+                        <div class="col-sm-10">
+                            Instantly exchange and convert your tokens <br>
+                            High liquidity, no waiting time<br>
+                            Blockchain-level security, no deposit is required
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-              <div>
-                <strong>Trustless & Secure..</strong> Every operation happens on the smart contract. No trust is required. We never hold users' funds.
-              </div>
-            </div>							
-            <div class="col-md-4">
-              <div>
-                <strong>Compatible.</strong> Compatible with existing smart contracts. No changes needed to integrate with KyberNetwork.
-              </div>
+            <div class="main-info">
+                <div class="main-about" id="about-section">
+                    <h2>About</h2>
+                    <div class="row">
+                        <div class="col-md-9 about-name">
+                            Kyber Network
+                        </div>
+                        <div class="col-md-3 about-line"></div>
+                    </div>
+                    <div class="row about-intro">
+                        <h3>Intro</h3>
+                        <div class="col-xs-4">
+                            KyberNetwork is a new system which allows the exchange and conversion of digital assets.<br>
+                            We provide rich payment APIs and a new contract wallet that allow anyone to seamlessly receive payments from any token. <br>
+                            Users can also mitigate the risks of price fluctuations in cryptocurrency world with our derivatives trading.<br>
+                        </div>
+                    </div>
+                    <div class="about-value">
+                        <h3>Properties</h3>
+                        <div class="row about-value-content">
+                            <div class="col-md-4">
+                                <div>
+                                    <strong>High liquidity.</strong> We maintain a reserve of all tokens to provide high liquidity. Get your tokens instantly when you trade.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <strong>Trustless & Secure..</strong> Every operation happens on the smart contract. No trust is required. We never hold users' funds.
+                                </div>
+                            </div>							
+                            <div class="col-md-4">
+                                <div>
+                                    <strong>Compatible.</strong> Compatible with existing smart contracts. No changes needed to integrate with KyberNetwork.
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="about-write">
+                        <span>
+                            <a href="assets/KyberNetworkWhitepaper-v0.5.pdf">White paper</a>
+                        </span>
+
+                    </div>
+                </div>
+                <div class="main-app" id="application-section">
+                    <h2>Applications</h2>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 app-item">
+                            <div><img src="images/icon1.svg" /></div>
+                            <div>Exchange</div>
+                            <div class="app-item-body">
+                                Convert and exchange your tokens securely, instantly with us.
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 app-item">
+                            <div><img src="images/icon2.svg" /></div>
+                            <div>Proxy Payment</div>
+                            <div class="app-item-body">
+                                Pay to anyone in any token from your own token.
+                                We'll do the conversion and forward the payment instantly.
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 app-item">
+                            <div><img src="images/icon3.svg" /></div>
+                            <div>Derivatives</div>
+                            <div class="app-item-body">
+                                Get your dividends from a DAO soon and worry about the price fluctuation? Hegde with us.
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 app-item">
+                            <div><img src="images/icon4.svg" /></div>
+                            <div>Cross-chain payments</div>
+                            <div class="app-item-body">
+                                We allow you to receive payments from Bitcoin and other cryptocurrencies in Ether.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-plan" id="roadmap-section">
+                    <h2>Our Roadmap</h2>
+                    <div class="roadmap-wrapper">
+                        <div class="roadmap-content except-mobile">
+                            <div class="row plan-top">
+                                <div class="plan-item plan-1 col-sm-4 col-sm-offset-2">
+                                    <div class="rotate-90">
+                                        Phase 1
+                                    </div>
+                                    <div class="plan-1-intro plan-intro">
+                                        Exchange and proxy payments between any tokens to and from Ether
+                                    </div>
+                                </div>
+
+                                <div class="plan-3 plan-item col-sm-6">
+                                    <div class="rotate-90">
+                                        Phase 3
+                                    </div>
+                                    <div class="plan-3-intro plan-intro">
+                                        Support trading other financial instruments
+                                    </div>
+                                </div>                                
+                                <div style="clear: both;"></div>
+                            </div>
+                            <div class="plan-bar main-gradient"></div>
+                            <div class="row plan-bottom">
+                                <div class="plan-item plan-0 col-sm-4">
+                                    <div class="rotate-90">
+                                        Phase 0
+                                    </div>
+                                    <div class="plan-1-intro plan-intro">
+                                        Launch on testnet
+                                    </div>
+                                </div>
+
+                                <div class="plan-item plan-2 col-sm-4">
+                                    <div class="rotate-90">
+                                        Phase 2
+                                    </div>
+                                    <div class="plan-1-intro plan-intro">
+                                        Support arbitrary token pairs
+                                    </div>
+                                </div>
+
+                                <div class="plan-4 plan-item col-sm-4">
+                                    <div class="rotate-90">
+                                        Phase 4
+                                    </div>
+                                    <div class="plan-1-intro plan-intro">
+                                        Support cross-chain trading
+                                    </div>
+                                </div>
+
+                                <div style="clear: both;"></div>
+                            </div>
+                        </div>
+                        <div class="only-mobile row">
+                            <div class="col-xs-5 plan-m-left">
+                                <div class="plan-m-1">
+                                    <div>Phase 1</div>
+                                    <div>Exchange and proxy payments between any tokens to and from Ether</div>
+                                </div>
+                                <div class="plan-m-3">
+                                    <div>Phase 3</div>
+                                    <div>Support trading other financial instruments</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 plan-m-center">
+                                <div class="plan-bar mobile-gradient">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-5 plan-m-right">
+                                <div class="plan-m-0">
+                                    <div>Phase 0</div>
+                                    <div>Launch on testnet</div>
+                                </div>
+                                <div class="plan-m-2">
+                                    <div>Phase 2</div>
+                                    <div>Support arbitrary token pairs</div>
+                                </div>
+                                <div class="plan-m-3">
+                                    <div>Phase 4</div>
+                                    <div>Support cross-chain trading</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-team" id="team-section">
+                    <h2>The team</h2>
+                    <div class="team-title">
+                        <div class="indicator">
+                        </div>
+                        <div class="title">
+                            <h4>Our members</h4>
+                            <p>Security experts, experienced smart contract developers</p>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <div class="member-info">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 team-item">
+                                <div><img src="images/LoiLuu.png" /></div>
+                                <div>Loi Luu</div>
+                                <div class="bio">
+                                    <input class="read-more-state" id="loi-bio" type="checkbox">
+                                    <p class="member-bio read-more-wrap">
+                                        Loi Luu is researcher working on cryptocurrencies, smart contract security and distributed consensus algorithms.  He is also a regular invited speaker at Bitcoin and Ethereum workshops such as DevCon2, 
+                                        <span class="read-more-target">
+                                            EdCon, Scaling Bitcoin.<br/>
+                                            Loi believes in the force of the Ethereum and Blockchain technology. Much of his work revolves around this community. He developed <a href="https://github.com/melonproject/oyente">Oyente</a>, the first open-source security analyzer for Ethereum smart contracts. Loi also cofounded SmartPool, another open source  project which embraces decentralization of mining pools in existing cryptocurrency. He continues to champion decentralisation and trustless properties of the Blockchain with KyberNetwork, taking inspiration and developing value for the community. 
+                                        </span>
+                                        <label class="read-more-trigger" for="loi-bio"></label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 team-item">
+                                <div><img src="images/Yaron.png" /></div>
+                                <div>Yaron Velner</div>
+                                <div class="bio">
+                                    <input class="read-more-state" id="yaron-bio" type="checkbox">
+                                    <p class="member-bio read-more-wrap">
+                                        Yaron Velner is a researcher and a co-founder of the SmartPool project. His research is focused on aspects of game theory incentives in blockchain protocols and formal verification of smart contracts. He holds a PhD
+                                        <span class="read-more-target">
+                                            in Computer Science from Tel Aviv University. In his PhD thesis he, investigated applications of game theory techniques to formal verification of computer programs and systems. <br>
+                                            Yaron is also an experienced software developer with over 10 years of experience as a senior software engineer and a technical leader at EZchip semi-conductors. At EZchip he was a member in the data structure and algorithm team, which developed novel data structures for IP routing.
+                                        </span>
+                                        <label class="read-more-trigger" for="yaron-bio"></label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 team-item">
+                                <div><img src="images/victor.png" /></div>
+                                <div>Victor Tran</div>
+                                <div class="bio">
+                                    <input class="read-more-state" id="victor-bio" type="checkbox">
+                                    <p class="member-bio read-more-wrap">
+                                        Victor Tran is a senior backend engineer and Linux system administrator. He has experience in developing and building infrastructure for multiple social marketing platforms and advertising networks. He is interested in
+                                        <span class="read-more-target">
+                                            building high performance multi-platform applications.
+                                            Victor co-founded and was CTO of several startups in social marketing. He built and maintained platforms which handled millions of monthly active users. Victor is currently the lead engineer in the SmartPool project.
+                                        </span>
+                                        <label class="read-more-trigger" for="victor-bio"></label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 team-item">
+                                <div><img src="images/cuong.png" /></div>
+                                <div>Cuong Nguyen</div>
+                                <div>
+                                    Cuong is a senior web developer with several years building interesting web applications. He recently spends most of his time on playing around with  various blockchain platforms including Bitcoin, Ethereum and IBM's Fabric ledger.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advisor-title">
+                        <div>
+                            <div class="indicator">
+                            </div>
+                            <div class="title">
+                                <h4>Our advisors</h4>
+                                <p>People with wisdom and knowledge</p>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 team-item">
+                                <div><img src="images/wong-lee-hong.jpg" /></div>
+                                <div>Wong Lee Hong</div>
+                                <div class="bio">
+                                    <input class="read-more-state" id="wong-bio" type="checkbox">
+                                    <p class="member-bio read-more-wrap">
+                                        Wong Lee Hong career spans across various industries over 3 decades. He has extensive distribution and business development experience in consumer electronic, multimedia, computer gaming, Internet and the banking sectors. The
+                                        <span class="read-more-target">
+                                            second half of his career was spent developing the Internet Banking capability of a major financial institution, venture capital activities in strategic startups and regulatory management role, dealing with banking regulators in Asia in matters relating to banking technology and operations. At present, he is a Blockchain enthusiast and investor.
+                                        </span>
+                                        <label class="read-more-trigger" for="wong-bio"></label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 team-item">
+                                <div><img src="images/hoe-lon.JPG" /></div>
+                                <div>Leng Hoe Lon</div>
+                                <div class="bio">
+                                    <input class="read-more-state" id="leng-bio" type="checkbox">
+                                    <p class="member-bio read-more-wrap">
+                                        Leng Hoe Lon co-founded Shentilium with National University of Singapore, with the aim of using the latest data-driven technology to drive business decisions and gain competitive edge. He also co-founded TrackRecord Asia, with the vision that
+                                        <span class="read-more-target">
+                                            anyone can learn to trade in the financial markets profitably within a professional risk management framework. Prior to this, he held various positions in the financial industry including Deustsche Bank (London and Singapore), JPMorgan (Singapore), ABN Amro (Singapore). He was a Managing Director in Goldman Sachs’ Asia Macro Trading group in HK and Asian FX trader in London. He was also CEO of Tudor Capital Singapore, a global macro hedge fund.
+                                        </span>
+                                        <label class="read-more-trigger" for="leng-bio"></label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 team-item">
+                                <div><img src="images/vitalik-buterin.jpg" /> </div>
+                                <div>Vitalik Buterin</div>
+                                <div class="bio">
+                                    <input class="read-more-state" id="vitalik-bio" type="checkbox">
+                                    <p class="member-bio read-more-wrap">
+                                        Vitalik is the Founder and Chief Scientist of Ethereum. He is also both the Founder and a writer for Bitcoin Magazine, a venture that marked the beginning of his career in crypto in 2011. He is interested in creating secure, efficient,
+                                        <span class="read-more-target">
+                                            and trustworthy systems and advises a number of projects in the crypto space.
+                                        </span>
+                                        <label class="read-more-trigger" for="vitalik-bio"></label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 team-item">
+                                <div><img src="images/prateek.jpg" /></div>
+                                <div>Prateek Saxena</div>
+                                <div class="bio">
+                                    <input class="read-more-state" id="prateek-bio" type="checkbox">
+                                    <p class="member-bio read-more-wrap">
+                                        Prateek Saxena is a research professor in computer science at National University of Singapore. He works on blockchains and computer security. His research has influenced the design of browser platforms, web standards and app stores widely
+                                        <span class="read-more-target">
+                                            used today. He has received several premier awards such as the MIT TR35 Asia.
+                                        </span>
+                                        <label class="read-more-trigger" for="prateek-bio"></label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="row except-mobile">
+                <div class="footer-contact col-sm-6">
+                    <div class="contact-text">Contact us</div>
+                    <div class="contact-info">
+                        <div>Twitter: <a href="https://twitter.com/KyberNetwork">@KyberNetwork</a></div>
+                        <div>Email: <a href="mailto:hello@kyber.network">hello@kyber.network</a></div>					
+                    </div>
+                </div>
+                <div class="subscribe-box col-sm-6">
+                    <div class="subscribe-text">Subscribe to Kyber.Network</div>
+
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup_f">
+                        <div class="subscribe-form">
+                            <form action="//network.us15.list-manage.com/subscribe/post?u=6b7b41e94cc1338541eeae656&amp;id=c832c80344" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_6b7b41e94cc1338541eeae656_c832c80344" tabindex="-1" value="">
+                                </div>
+                                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-submit">
+                                    <span class="subscribe-submit"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--End mc_embed_signup-->
+
+                    <div class="copyright">
+                        <strong>Kyber.network</strong> - All rights reserved - 2017 ©
+                    </div>
+                </div>
             </div>
 
-            
-          </div>
-          <div class="about-write">
-            <span>
-              <a href="assets/paper.pdf">White paper</a>
-            </span>
-            
-          </div>
-        </div>
-				<div class="main-app" id="application-section">
-					<h2>Applications</h2>
-					<div class="row">
-						<div class="col-md-3 app-item">
-              <div><img src="images/icon1.svg"></img></div>
-							<div>Exchange</div>
-							<div class="app-item-body">
-								Convert and exchange your tokens securely, instantly.
-							</div>
-						</div>
-						<div class="col-md-3 app-item">
-              <div><img src="images/icon2.svg"></img></div>
-							<div>Proxy Payment</div>
-							<div class="app-item-body">
-								Pay to anyone in any token from your own token.
-								We will do the conversion and forward the payment instantly.
-							</div>
-						</div>
-						<div class="col-md-3 app-item">
-              <div><img src="images/icon3.svg"></img></div>
-							<div>Derivatives</div>
-							<div class="app-item-body">
-								Get your dividends from a DAO soon and worry about the price fluctuation? Hedge with us.
-							</div>
-						</div>
-						<div class="col-md-3 app-item">
-              <div><img src="images/icon4.svg"></img></div>
-							<div>Cross-chain Payment</div>
-							<div class="app-item-body">
-								We allow you to receive payments from Bitcoin and other cryptocurrencies in Ether.
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="main-plan" id="roadmap-section">
-					<h2>Our Roadmap</h2>
-					<div>
-						<div class="row plan-top">
-              <div class="plan-item plan-1">
-                <div class="rotate-90">
-                  Phase 1
+            <div class="row only-mobile">
+
+                <div class="subscribe-box col-xs-12">
+                    <div class="subscribe-text">Subscribe to Kyber.Network</div>
+
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup_f">
+                        <div class="subscribe-form">
+                            <form action="//network.us15.list-manage.com/subscribe/post?u=6b7b41e94cc1338541eeae656&amp;id=c832c80344" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_6b7b41e94cc1338541eeae656_c832c80344" tabindex="-1" value="">
+                                </div>
+                                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-submit">
+                                    <span class="subscribe-submit"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--End mc_embed_signup-->
+
+
                 </div>
-              </div>
-              <div class="plan-1-intro plan-intro">
-                Exchange and proxy payments between any tokens to and from Ether
-              </div>
-              <div class="plan-3 plan-item">
-                <div class="rotate-90">
-                  Phase 3
+                <div class="footer-contact col-xs-12">
+                    <div class="contact-text">Contact us</div>
+                    <div class="contact-info">
+                        <div>Twitter: <a href="https://twitter.com/KyberNetwork">@KyberNetwork</a></div>
+                        <div>Email: <a href="mailto:hello@kyber.network">hello@kyber.network</a></div>					
+                    </div>
+
                 </div>
-              </div>
-              <div class="plan-3-intro plan-intro" style="margin-top: -53px;">
-                Support trading advanced financial instruments
-              </div>
-              <div style="clear: both;"></div>
-						</div>
-						<div class="plan-bar main-gradient"></div>
-						<div class="row plan-bottom">
-              <div class="plan-item plan-0">
-                <div class="rotate-90">
-                  Phase 0
+
+                <div class="copyright col-xs-12">
+                    <strong>Kyber.network</strong> - All rights reserved - 2017 ©
                 </div>
-              </div>
-              <div class="plan-1-intro plan-intro">
-                Launch on testnet
-              </div>
-              <div class="plan-item plan-2">
-                <div class="rotate-90">
-                  Phase 2
-                </div>
-              </div>
-              <div class="plan-1-intro plan-intro">
-                Support arbitrary token pairs
-              </div>
-              <div class="plan-4 plan-item">
-                <div class="rotate-90">
-                  Phase 4
-                </div>
-              </div>
-              <div class="plan-1-intro plan-intro">
-                Support cross-chain trading
-              </div>
-              <div style="clear: both;"></div>
-						</div>
-					</div>
-				</div>
-				<div class="main-team" id="team-section">
-					<h2>The team</h2>
-					<div class="team-title">
-            <div class="indicator">
             </div>
-						<div class="title">
-							<h4>Our members</h4>
-              <p>Security experts, experienced smart contract developers</p>
-						</div>
-            <div style="clear: both;"></div>
-					</div>
-					<div class="member-info">
-						<div class="row">
-							<div class="col-md-3 team-item">
-                <div><img src="images/LoiLuu.png"></img></div>
-								<div>Loi Luu</div>
-								<div class="bio">
-                  <input class="read-more-state" id="loi-bio" type="checkbox">
-                  <p class="member-bio read-more-wrap">
-                    Loi Luu is researcher working on cryptocurrencies, smart contract security and distributed consensus algorithms.  He is also a regular invited speaker at Bitcoin and Ethereum workshops such as DevCon2, 
-                    <span class="read-more-target">
-                      EdCon, Scaling Bitcoin.<br/>
-                      Loi believes in the force of the Ethereum and Blockchain technology. Much of his work revolves around this community. He developed <a href="https://github.com/melonproject/oyente">Oyente</a>, the first open-source security analyzer for Ethereum smart contracts. Loi also cofounded SmartPool, another open source  project which embraces decentralization of mining pools in existing cryptocurrency. He continues to champion decentralisation and trustless properties of the Blockchain with KyberNetwork, taking inspiration and developing value for the community. 
-                    </span>
-                    <label class="read-more-trigger" for="loi-bio"></label>
-                  </p>
-								</div>
-							</div>
-							<div class="col-md-3 team-item">
-                <div><img src="images/Yaron.png"></img></div>
-								<div>Yaron Velner</div>
-								<div class="bio">
-                  <input class="read-more-state" id="yaron-bio" type="checkbox">
-                  <p class="member-bio read-more-wrap">
-                    Yaron Velner is a researcher and a co-founder of the SmartPool project. His research is focused on aspects of game theory incentives in blockchain protocols and formal verification of smart contracts. He holds a PhD
-                    <span class="read-more-target">
-                      in Computer Science from Tel Aviv University. In his PhD thesis he, investigated applications of game theory techniques to formal verification of computer programs and systems. <br>
-                      Yaron is also an experienced software developer with over 10 years of experience as a senior software engineer and a technical leader at EZchip semi-conductors. At EZchip he was a member in the data structure and algorithm team, which developed novel data structures for IP routing.
-                    </span>
-                    <label class="read-more-trigger" for="yaron-bio"></label>
-                  </p>
-								</div>
-							</div>
-							<div class="col-md-3 team-item">
-                <div><img src="images/victor.png"></img></div>
-								<div>Victor Tran</div>
-								<div class="bio">
-                  <input class="read-more-state" id="victor-bio" type="checkbox">
-                  <p class="member-bio read-more-wrap">
-                    Victor Tran is a senior backend engineer and Linux system administrator. He has experience in developing and building infrastructure for multiple social marketing platforms and advertising networks. He is interested in
-                    <span class="read-more-target">
-                    building high performance multi-platform applications.
-Victor co-founded and was CTO of several startups in social marketing. He built and maintained platforms which handled millions of monthly active users. Victor is currently the lead engineer in the SmartPool project.
-                    </span>
-                    <label class="read-more-trigger" for="victor-bio"></label>
-                  </p>
-								</div>
-							</div>
-							<div class="col-md-3 team-item">
-                <div><img src="images/cuong.png"></img></div>
-								<div>Cuong Nguyen</div>
-								<div>
-									Cuong is a senior web developer with several years building interesting web applications. He recently spends most of his time on playing around with  various blockchain platforms including Bitcoin, Ethereum and IBM's Fabric ledger.
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="advisor-title">
-						<div>
-              <div class="indicator">
-              </div>
-              <div class="title">
-                <h4>Our advisors</h4>
-                <p>People with wisdom and knowledge</p>
-              </div>
-              <div style="clear: both;"></div>
-						</div>
-					</div>
-					<div>
-						<div class="row">
-							<div class="col-md-3 team-item">
-                <div><img src="images/wong-lee-hong.jpg"></img></div>
-								<div>Wong Lee Hong</div>
-								<div class="bio">
-                  <input class="read-more-state" id="wong-bio" type="checkbox">
-                  <p class="member-bio read-more-wrap">
-                  Wong Lee Hong career spans across various industries over 3 decades. He has extensive distribution and business development experience in consumer electronic, multimedia, computer gaming, Internet and the banking sectors. The
-                    <span class="read-more-target">
-                      second half of his career was spent developing the Internet Banking capability of a major financial institution, venture capital activities in strategic startups and regulatory management role, dealing with banking regulators in Asia in matters relating to banking technology and operations. At present, he is a Blockchain enthusiast and investor.
-                    </span>
-                    <label class="read-more-trigger" for="wong-bio"></label>
-                  </p>
-								</div>
-							</div>
-							<div class="col-md-3 team-item">
-                <div><img src="images/hoe-lon.JPG"></img></div>
-								<div>Leng Hoe Lon</div>
-								<div class="bio">
-                  <input class="read-more-state" id="leng-bio" type="checkbox">
-                  <p class="member-bio read-more-wrap">
-                    Leng Hoe Lon co-founded Shentilium with National University of Singapore, with the aim of using the latest data-driven technology to drive business decisions and gain competitive edge. He also co-founded TrackRecord Asia, with the vision that
-                    <span class="read-more-target">
-                    anyone can learn to trade in the financial markets profitably within a professional risk management framework. Prior to this, he held various positions in the financial industry including Deustsche Bank (London and Singapore), JPMorgan (Singapore), ABN Amro (Singapore). He was a Managing Director in Goldman Sachs’ Asia Macro Trading group in HK and Asian FX trader in London. He was also CEO of Tudor Capital Singapore, a global macro hedge fund.
-                    </span>
-                    <label class="read-more-trigger" for="leng-bio"></label>
-                  </p>
-								</div>
-							</div>
-							<div class="col-md-3 team-item">
-                <div><img src="images/vitalik-buterin.jpg"></img></div>
-								<div>Vitalik Buterin</div>
-								<div class="bio">
-                  <input class="read-more-state" id="vitalik-bio" type="checkbox">
-                  <p class="member-bio read-more-wrap">
-                    Vitalik is the Founder and Chief Scientist of Ethereum. He is also both the Founder and a writer for Bitcoin Magazine, a venture that marked the beginning of his career in crypto in 2011. He is interested in creating secure, efficient,
-                    <span class="read-more-target">
-                      and trustworthy systems and advises a number of projects in the crypto space.
-                    </span>
-                    <label class="read-more-trigger" for="vitalik-bio"></label>
-                  </p>
-								</div>
-							</div>
-							<div class="col-md-3 team-item">
-                <div><img src="images/prateek.jpg"></img></div>
-								<div>Prateek Saxena</div>
-								<div class="bio">
-                  <input class="read-more-state" id="prateek-bio" type="checkbox">
-                  <p class="member-bio read-more-wrap">
-                    Prateek Saxena is a research professor in computer science at National University of Singapore. He works on blockchains and computer security. His research has influenced the design of browser platforms, web standards and app stores widely
-                    <span class="read-more-target">
-                      used today. He has received several premier awards such as the MIT TR35 Asia.
-                    </span>
-                    <label class="read-more-trigger" for="prateek-bio"></label>
-                  </p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
-	<footer>
-		<div class="row">
-			<div class="footer-contact col-md-6">
-				<div class="contact-text">Contact us</div>
-				<div class="contact-info">
-					<div>Twitter: <a href="https://twitter.com/KyberNetwork">@KyberNetwork</a></div>
-					<div>Email: <a href="mailto:hello@kyber.network">hello@kyber.network</a></div>					
-				</div>
-			</div>
-			<div class="subscribe-box col-md-6">
-				<div class="subscribe-text">Subscribe to Kyber.Network</div>
-
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup">
-          <div class="subscribe-form">
-            <form action="//network.us15.list-manage.com/subscribe/post?u=6b7b41e94cc1338541eeae656&amp;id=c832c80344" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_6b7b41e94cc1338541eeae656_c832c80344" tabindex="-1" value="">
-              </div>
-              <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-submit">
-                <div class="subscribe-submit"></div>
-              </button>
-            </form>
-          </div>
-        </div>
-        <!--End mc_embed_signup-->
-
-        <div class="copyright">
-          <strong>Kyber.network</strong> - All rights reserved - 2017 ©
-        </div>
-			</div>
-		</div>
-	</footer>
+        </footer>
+    </body>
 </html>
