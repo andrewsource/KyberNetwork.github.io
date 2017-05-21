@@ -212,19 +212,16 @@ color : #1D1D1B;
   text-align: center;
 }
 .about-write span:after{
-    content: " ";
-    display: inline-block;
-    
-    margin-left: 37px;
-    margin-top: 26px;
-    position: absolute;
-    
+  content: " ";
+  display: inline-block;
+  margin-left: 37px;
+  margin-top: 26px;
+  position: absolute;
 
-     width: 0; 
+  width: 0; 
   height: 0; 
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  
   border-left: 15px solid #00983a;
 }
 .app-item{
@@ -234,7 +231,7 @@ color : #1D1D1B;
   width: 50%;
   height: 100%;
   vertical-align: middle;
-  display: inline-block;
+  display: block;
   margin: auto;
 }
 
