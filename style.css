@@ -230,6 +230,14 @@ color : #1D1D1B;
 .app-item{
   padding: 20px;
 }
+.app-item img {
+  width: 120px;
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  margin: auto;
+}
+
 .app-item >div,
 .team-item >div{
   text-align: justify;
@@ -295,27 +303,27 @@ margin-bottom: 80px;
   margin: 0 auto;
 }
 
-input.subscribe-submit {
+button.subscribe-submit {
   background-color: white;
   border-radius: 30px;
   display: inline-block;
   height: 30px;
   width: 30px;
+  vertical-align: bottom;
+  border: 0;
 }
 
-input.subscribe-submit:after {
+div.subscribe-submit:after {
   content: " ";
   display: inline-block;
-  margin-left: 9px;
-  margin-top: 5px;
-  position: absolute;
-
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-
   border-left: 15px solid #00983A;
+  vertical-align: middle;
+  margin-left: 2px;
+  margin-top: -2px;
 }
 
 .icon-play{
