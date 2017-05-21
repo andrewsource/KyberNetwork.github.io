@@ -37,7 +37,7 @@ header{
     width: 10px;
 }
 .header-bottom a{
-  font-size : 13px;
+  font-size : 14px;
   color : #1D1D1B;
 }
 .main-gradient{
@@ -145,21 +145,25 @@ color : #1D1D1B;
   font-size : 62px;
   line-height : 50px;
   padding-left: 60px;
+  display: inline-block;
 }
 .about-intro div{
   width: 100%;
 }
 .about-intro h3{
-   font-weight : bold;
+  font-weight : bold;
   font-size : 26px;
-  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
-.about-intro *{
-  text-align: right;
-}
+
 .about-line{
+  margin-left: 15px;
   height: 100px;
   border-bottom: 5px solid #00983A;
+  width: 300px;
+  display: inline-block;
 }
 
 .about-value h3{
@@ -173,7 +177,7 @@ color : #1D1D1B;
 }
 
 .about-value {
-    margin-top: 80px;
+    margin-top: 40px;
     padding-right: 100px;
 }
 
@@ -201,7 +205,15 @@ color : #1D1D1B;
 .about-write{
   text-align: right;
   padding-right: 50px;
+  padding-top: 20px;
 }
+
+div.properties > h3 {
+  margin: 30px 0 30px 50px;
+  border-bottom: 3px solid #00983A;
+  display: inline-block;
+}
+
 .about-write span a {
   padding: 10px;
   border-bottom: 3px solid #00983A;
