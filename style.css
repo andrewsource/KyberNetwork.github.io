@@ -231,7 +231,7 @@ color : #1D1D1B;
   padding: 20px;
 }
 .app-item img {
-  width: 120px;
+  width: 50%;
   height: 100%;
   vertical-align: middle;
   display: inline-block;
