@@ -24,7 +24,7 @@ header{
 }
 
 .header-bottom .only-desktop a{
-    font-size : 13px;
+    font-size : 14px;
     color : #1D1D1B;
 }
 .main-gradient{
@@ -141,7 +141,8 @@ footer{
     padding-right: 15px;
 }
 .about-intro *{
-    text-align: right;
+    text-align: left;
+    margin-left: 50px;
 }
 .about-line{
     height: 100px;
@@ -151,6 +152,10 @@ footer{
 .about-value h3{
     font-weight : bold;
     font-size : 26px;
+    margin-left: 30px;
+    border-bottom: 3px solid #00983A;
+    display: inline-block;
+    margin-top: 0;
 }
 
 .about-value strong {
@@ -159,7 +164,7 @@ footer{
 }
 
 .about-value {
-    margin-top: 80px;
+    margin-top: 60px;
     padding-right: 100px;
 }
 
@@ -623,7 +628,7 @@ button.subscribe-submit{
 
     .header-bottom{
         margin-right: 100px;
-        margin-top: 80px;
+        margin-top: 100px;
     }
 
     .header-link{
