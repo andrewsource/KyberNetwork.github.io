@@ -173,6 +173,11 @@ footer{
     color: white;
 }
 
+.contact-info img {
+  max-width: 30px;
+  margin: 10px;
+}
+
 .about-value >div >div{
     text-align: justify;
     padding: 50px;
@@ -498,8 +503,10 @@ div.subscribe-submit:after {
 }
 .contact-info{
     margin-top: 17px;
-    padding-left: 10px;
-    border-left: 4px solid;
+}
+.contact-info div {
+  display: inline-block;
+  text-align: center;
 }
 .copyright {
     padding-top: 20px;
