@@ -1,2 +1,2 @@
 # KyberNetwork.github.io
-Homepage for KyberNetwork.com
+Homepage for Kyber.Network
