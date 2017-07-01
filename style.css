@@ -165,7 +165,7 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) no-repeat;background-size:
 .read-more-state { display: none; }
 .read-more-target { opacity: 0;max-height: 0;font-size: 0;display: none; }
 .read-more-state:checked ~ .read-more-wrap .read-more-target { opacity: 1;font-size: inherit;max-height: 999em;display: inline; }
-.read-more-state ~ .member-bio .read-more-trigger:before { content: '... READ MORE';color:#188c92; }
+.read-more-state ~ .member-bio .read-more-trigger:before { content: ' READ MORE';color:#188c92; }
 .read-more-state:checked ~ .member-bio .read-more-trigger:before { content: ' HIDE';color:#188c92; }
 
 
