@@ -92,9 +92,12 @@ ul.navbar-nav li.active a,ul.navbar-nav li:hover a { font-weight: 900; }
 
 #banner {  }
 .top-slider ul { padding-left:20px;margin:2rem 0; }
-ul.seq-canvas li.item-1{ background: url(img/w3.jpg) 25% 75% no-repeat;background-size: cover; }
-ul.seq-canvas li.item-2 { background: url(img/w2.jpg) no-repeat;background-size: cover; }
-ul.seq-canvas li.item-3 { background: url(img/w1.jpg) no-repeat;background-size: cover; }
+ul.seq-canvas li.item-1{ background: url(img/w2.png)no-repeat;
+background-position: 45% 25%;
+background-size: cover; }
+ul.seq-canvas li.item-2{ background: url(img/w2.png)no-repeat;
+background-position: 45% 25%;
+background-size: cover; }
 
 #about { margin-top: 20px;padding: 50px 0;background:url(img/chambi.png) 50vw center no-repeat;background-size: cover; }
 #about h2 { padding-bottom: 10px;position: relative; }
@@ -199,6 +202,31 @@ ul.seq-canvas li.item-3 { background: url(img/w1.jpg) no-repeat;background-size:
 #contact input[type="text"] { border: 0; background: #e6e4e4;padding:10px 0 10px 15px;width: 90%; }
 #contact button[type="submit"] { margin-left:-15%;border: 0;background: rgba(0,0,0,0);font-family: FontAwesome; color: #188c92;cursor: pointer; }
 
+/*Banner Style Class*/
+.pd-copy{
+	padding: 1.1% 0;
+}
+.inline-block{
+	display: inline-block;
+	padding: 3% 0;
+	font-size: 26px;
+	font-weight:700;
+}
+.typo-high{
+	display: inline-block;
+	padding: 1% 4%;
+	font-size: 56px;
+	font-weight: 900;
+}
+.italic {
+	font-style:italic
+}
+.bigger {
+	font-size: 30px!important;
+}
+.bold {
+ font-weight:900;
+}
 @media screen and (max-width: 1400px) {
 	h2 { font-size: 24px;}
   p { font-size: 13px; }
