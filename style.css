@@ -147,7 +147,7 @@ background-size: cover; }
   background: linear-gradient(to right,  #3196ae 0%,#71bf9b 100%);
 }
 .step { position: absolute;z-index: 2;top:-50px;width: 150px; }
-.step img { margin:15px 0; }
+.step img { margin:5px 0; }
 .step h6 { font-size: .9rem ;}
 .step1 { left:calc(0% - 75px); }
 /*.step2 { left:calc(25% - 100px); }
@@ -155,7 +155,6 @@ background-size: cover; }
 .step4 { right: calc(5% + 120px); }*/
 .step5 { right:calc(0% - 75px); }
 
-#team { border-top:1px solid #188c92; }
 #team h2 { padding-bottom: 10px;position: relative;margin:85px auto 0; }
 .member { margin-top:60px; }
 .member img { width: 220px;height: 220px;border-radius: 50%;border-width: 2px;border-color: #00983A; }

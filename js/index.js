@@ -27,10 +27,10 @@ function update() {
   //var total_d = 50;
   //pos_rad = ((d)*24 + hours) / ((total_d)*24.00);
   var start_d = Math.round((Date.parse("August 1, 2017"))/(1000*60*60*24));
-  var phase2 = Math.round((Date.parse("December 1, 2017"))/(1000*60*60*24));
-  var phase3 = Math.round((Date.parse("February 1, 2018"))/(1000*60*60*24));
-  var phase4 = Math.round((Date.parse("June 1, 2018"))/(1000*60*60*24));
-  var end_d = Math.round((Date.parse("December 1, 2018"))/(1000*60*60*24));
+  var phase2 = Math.round((Date.parse("January 1, 2018"))/(1000*60*60*24));
+  var phase3 = Math.round((Date.parse("April 1, 2018"))/(1000*60*60*24));
+  var phase4 = Math.round((Date.parse("July 1, 2018"))/(1000*60*60*24));
+  var end_d = Math.round((Date.parse("January 1, 2019"))/(1000*60*60*24));
   var total_d = end_d - start_d;//alert(total_d);
   pos_rad = ((d - start_d)*24 + hours) / ((total_d)*24.00);
   //pos_rad = 244*24.00 / ((total_d)*24.00);//alert(pos_rad);
