@@ -190,7 +190,7 @@ background-size: cover; }
 #contact input[type="text"] { border: 0; background: #e6e4e4;padding:10px 0 10px 15px;width: 90%; }
 #contact button[type="submit"] { margin-left:-15%;border: 0;background: rgba(0,0,0,0);font-family: FontAwesome; color: #188c92;cursor: pointer; }
 
-/*Banner Style Class*/
+/*BANNER STYLE CLASS*/
 .pd-copy{
 	padding: 1.1% 0;
 }
@@ -215,6 +215,19 @@ background-size: cover; }
 .bold {
  font-weight:900;
 }
+.list-benefits {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.list-benefits li {
+	background:url('img/ico-bullet-16.svg') 0 20% no-repeat;
+	padding-left:25px;  /*spacing between bullet and text*/
+	height: 52px;
+}
+
+
+/*END OF BANNER STYLE CLASS*/
 @media screen and (max-width: 1400px) {
 	h2 { font-size: 24px;}
   p { font-size: 13px; }
