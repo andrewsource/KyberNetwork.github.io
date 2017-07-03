@@ -1,538 +1,919 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>KyberNetwork</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="The next generation of on-chain Exchange & Payment Service" name="description" />
-    <meta content="blockchain, exchange network, ethereum, bitcoin, decentralize, free" name="keywords" />
-    <meta content="index, follow" name="robots" />
-    <meta content="KyberNetwork" property="og:title" />
-    <meta content="website" property="og:type" />
-    <meta content="KyberNetwork is a new system which allows the exchange and conversion of digital assets." property="og:description" />
-    <meta content="http://kyber.network" property="og:url" />
-    <meta content="http://kyber.network/images/logo.png" property="og:image" />
-    <meta content="The next generation of on-chain Exchange & Payment Service" name="twitter:card" />
-    <meta content="@KyberNetwork" name="twitter:site" />
-    <meta content="KyberNetwork" name="twitter:title" />
-    <meta content="The next generation of on-chain Exchange & Payment Service" name="twitter:description" />
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Ethereum Exchange">
+  <meta name="author" content="Thomas Nguyen">
 
-    <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+  <title>kyber.network</title>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom Fonts -->
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="plugins/slick/slick.js"></script>
-    <script type="text/javascript" src="index.js"></script>
-    <link href="images/logo.png" rel="icon" sizes="16x16" type="image/x-icon" />
-    <link href="images/logo.png" rel="shortcut icon" type="image/png" />
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-99578428-1', 'auto');
-    ga('send', 'pageview');
-    </script>
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
 </head>
 <body>
-    <header>
-        <div class="header row">
-            <div class="col-sm-4 col-xs-2">
-                <a href="#">
-                    <img class="home_logo" src="images/home_icon.png" />
-                </a>
-            </div>
-            <div class="col-sm-8 col-xs-10 header-link except-mobile">
-                <div class="header-top">
-                    <div class="subscribe-top row">
-                        <span class="only-desktop">Subscribe to KyberNetwork</span>
-                        <span class="only-tablet subscribe-label">Subscribe</span>
-                        <div id="mc_embed_signup" style="display: inline-block;">
-                            <div class="subscribe-form">
-                                <form action="//network.us15.list-manage.com/subscribe/post?u=6b7b41e94cc1338541eeae656&amp;id=c832c80344" method="post" id="mc-embedded-subscribe-form-top" name="mc-embedded-subscribe-form-top" class="validate" target="_blank" novalidate>
-                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                        <input type="text" name="b_6b7b41e94cc1338541eeae656_c832c80344" tabindex="-1" value="">
-                                    </div>
-                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe-top" class="subscribe-submit subscribe-btn-top">
-                                        <span class="subscribe-submit"></span>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-bottom">
-                    <div class="only-desktop">
-                        <ul class="section-link">
-                            <li><a href="#">Home</a></li>
-                            <li><a href-data="about-section">About</a></li>
-                            <li><a href-data="application-section">Applications</a></li>
-                            <li><a href-data="roadmap-section">The plan</a></li>
-                            <li><a href-data="team-section">The team</a></li>
-                        </ul>
-                    </div>
-                    <div class="except-desktop">
-                        <div>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <img style="width: 30px;" src="images/icon_menu.png" />
-                            </a>
-                            <ul class="dropdown-menu section-link">
-                                <li><a href-data="#">Home</a></li>
-                                <li><a href-data="about-section">About</a></li>
-                                <li><a href-data="application-section">Applications</a></li>
-                                <li><a href-data="roadmap-section">The plan</a></li>
-                                <li><a href-data="team-section">The team</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="only-mobile col-sm-8 col-xs-10 header-link">
-                <div class="header-bottom">
-                    <div>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <img style="width: 30px;" src="images/icon_menu.png" />
-                        </a>
-                        <ul class="dropdown-menu section-link">
-                            <li><a href-data="#">Home</a></li>
-                            <li><a href-data="about-section">About</a></li>
-                            <li><a href-data="application-section">Applications</a></li>
-                            <li><a href-data="roadmap-section">The plan</a></li>
-                            <li><a href-data="team-section">The team</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <header id="home" class="page-section">
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-12 text-right topbar">
+        <select>
+          <option value="ENG">ENG</option>
+          <!-- <option value="VNI">VNI</option> -->
+        </select>
+        <a href="https://twitter.com/kybernetwork" style="border-left:1px solid #fff;"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://github.com/kyberNetwork/"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="http://slack.kyber.network/"><i class="fa fa-slack" aria-hidden="true"></i></a>
+      </div>
+
+    </div>
+    </div>
+    <nav data-scroll-header class="navbar navbar-toggleable-md navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleCenteredNav" aria-controls="navbarsExampleCenteredNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExampleCenteredNav">
+        <img src="img/home_icon.png" alt="" class="top-logo mx-auto d-block">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a data-scroll class="nav-link text-uppercase font-300 blue" href="#home">home</a>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;right:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;right:0;"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;top:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-left:1px solid #3196ae;position:absolute;left:2px;top:calc(1% + 7px);"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;bottom:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-right:1px solid #3196ae;position:absolute;right:2px;top:calc(1% + 7px);"></span>
+          </li>
+          <li class="nav-item">
+            <a data-scroll class="nav-link text-uppercase font-300 blue" href="#about">about</a>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;right:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;right:0;"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;top:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-left:1px solid #3196ae;position:absolute;left:2px;top:calc(1% + 7px);"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;bottom:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-right:1px solid #3196ae;position:absolute;right:2px;top:calc(1% + 7px);"></span>
+          </li>
+          <!-- <li class="nav-item">
+            <a data-scroll class="nav-link text-uppercase font-300 blue" href="#application">application</a>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;right:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;right:0;"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;top:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-left:1px solid #3196ae;position:absolute;left:2px;top:calc(1% + 7px);"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;bottom:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-right:1px solid #3196ae;position:absolute;right:2px;top:calc(1% + 7px);"></span>
+          </li> -->
+          <li class="nav-item">
+            <a data-scroll class="nav-link text-uppercase font-300 blue" href="#roadmap">roadmap</a>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;right:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;right:0;"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;top:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-left:1px solid #3196ae;position:absolute;left:2px;top:calc(1% + 7px);"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;bottom:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-right:1px solid #3196ae;position:absolute;right:2px;top:calc(1% + 7px);"></span>
+          </li>
+          <li class="nav-item">
+            <a data-scroll class="nav-link text-uppercase font-300 blue" href="#team">team</a>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;right:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;right:0;"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;top:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-left:1px solid #3196ae;position:absolute;left:2px;top:calc(1% + 7px);"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;bottom:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-right:1px solid #3196ae;position:absolute;right:2px;top:calc(1% + 7px);"></span>
+          </li>
+          <li class="nav-item">
+            <a data-scroll class="nav-link text-uppercase font-300 blue" href="#faqs">faqs</a>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;right:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;right:0;"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;top:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-left:1px solid #3196ae;position:absolute;left:2px;top:calc(1% + 7px);"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;bottom:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-right:1px solid #3196ae;position:absolute;right:2px;top:calc(1% + 7px);"></span>
+          </li>
+          <!-- <li class="nav-item">
+            <a data-scroll class="nav-link text-uppercase font-300 blue" href="#news">news</a>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;right:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;right:0;"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;top:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-left:1px solid #3196ae;position:absolute;left:2px;top:calc(1% + 7px);"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;bottom:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-right:1px solid #3196ae;position:absolute;right:2px;top:calc(1% + 7px);"></span>
+          </li> -->
+          <li class="nav-item">
+            <a data-scroll class="nav-link text-uppercase font-300 blue" href="#contact">contact</a>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;right:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;right:0;"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;top:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-left:1px solid #3196ae;position:absolute;left:2px;top:calc(1% + 7px);"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;bottom:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-right:1px solid #3196ae;position:absolute;right:2px;top:calc(1% + 7px);"></span>
+          </li>
+          <li class="nav-item">
+            <a data-scroll class="nav-link text-uppercase font-300 blue" href="https://blog.kyber.network">blog</a>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;top:0;right:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;left:0;"></span>
+            <span style="width:5px;height:5px;background:#3196ae;border-radius:50%;position:absolute;bottom:0;right:0;"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;top:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-left:1px solid #3196ae;position:absolute;left:2px;top:calc(1% + 7px);"></span>
+            <span style="width:calc(100% - 15px);border-top:1px solid #3196ae;position:absolute;bottom:2px;left:calc(1% + 7px);"></span>
+            <span style="height:calc(100% - 15px);border-right:1px solid #3196ae;position:absolute;right:2px;top:calc(1% + 7px);"></span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="banner" class="page-section">
+   <div id="sequence" class="seq">
+     <div class="seq-screen">
+       <ul class="seq-canvas">
+         <li class="seq-in item-1">
+           <div class="seq-title text-center">
+             <div data-seq class="container">
+               <div class=" col-xs-12 col-md-9 offset-md-3 top-slider padding-0 text-left" style="margin-top:15%;">
+                 <h1 class="blue font-900">WHY KYBER NETWORK?</h1>
+                 <ul  class="blue font-250 list-benefits-unique">
+                   <li class="pd-copy bigger">Trustless </li>
+                   <li class="pd-copy bigger">Instant</li>
+                   <li class="pd-copy bigger">Liquid</li>
+                   <li class="pd-copy bigger">Compatible</li>
+                 </ul>
+
+               </div>
+             </div>
+           </div>
+
+         </li>
+
+         <li class="item-2">
+           <div class="seq-title text-center">
+             <div data-seq class="container">
+               <div class="row">
+                 <div class="col-xs-12 col-md-8 offset-md-3 top-slider padding-0 text-left" style="margin-top:15%;">
+                   <h1 class="blue font-900">WHAT CAN YOU DO WITH US?</h1>
+                   <ul class="blue font-300 list-benefits">
+                     <li class="pd-copy"> <span class="bold">convert</span> and <span class="bold italic">exchange</span> token</li>
+                     <li class="pd-copy">pay anyone <span class="bold">with your own token</span></li>
+                     <li class="pd-copy"><span class="bold">hedge against</span> price fluctuation</li>
+                     <li class="pd-copy">
+                        receive payments from <span class="bold">Bitcoin</span> and <span class="bold">others</span> in <span class="bold">Ether</span>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+         </li>
+
+       </ul>
+     </div>
+     <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+       <button type="button" class="seq-prev" aria-label="Previous">Previous</button>
+       <button type="button" class="seq-next" aria-label="Next">Next</button>
+     </fieldset>
+   </div>
+ </section>
+
+  <section id="about" class="page-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 col-sm-12">
+          <div class="col-md-8 offset-md-4 col-sm-12 text-center">
+            <h2 class="text-uppercase blue font-900">
+              about KyberNetwork
+              <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
+              <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
+              <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;right:0;z-index:1;"></span>
+            </h2>
+            <p class="text-justify">
+              KyberNetwork is a new system which allows the exchange and conversion of digital assets. <br>
+              We provide rich payment APIs and a new contract wallet that allow anyone to seamlessly receive payments from any token. <br>
+              Users can also mitigate the risks of price fluctuations in the cryptocurrency world with our derivative trading.
+            </p>
+            <a href="assets/KyberNetworkWhitepaper.pdf" class="text-uppercase kyber-btn white">white paper</a>
+            <!--
+            <a href="#" class="text-uppercase kyber-btn white">white paper</a>
+            <a href="#" class="text-uppercase kyber-btn white">white paper</a>
+            -->
+          </div>
         </div>
-        <div class="only-mobile">
-            <div class="subscribe-top" style="position: relative;top: -50px">
-                <div class="col-xs-3">
-                    <span>Subscribe</span>
-                </div>
-                <div class="col-xs-9">
-                    <div>
-                        <div class="subscribe-form">
-                            <form action="//network.us15.list-manage.com/subscribe/post?u=6b7b41e94cc1338541eeae656&amp;id=c832c80344" method="post" id="mc-embedded-subscribe-form-top" name="mc-embedded-subscribe-form-top" class="validate" target="_blank" novalidate style="width: 100%;">
-                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                    <input type="text" name="b_6b7b41e94cc1338541eeae656_c832c80344" tabindex="-1" value="">
-                                </div>
-                                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-submit subscribe-btn-top" style="margin-left: -35px;">
-                                    <span class="subscribe-submit"></span>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-7 col-sm-12">
+          <div class="col-md-8 col-sm-12 video">
+            <video width="100%" controls>
+              <source src="coming-soon.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
         </div>
-    </header>
-    <div class="main-container">
-        <div class="main-title-wapper main-gradient">
-            <div class="main-title row">
-                <div class="col-sm-12 col-md-6 main-title-text">
-                    <div>
-                        <h3>The next generation of on-chain</h3></div>
-                    <div>
-                        <h2>Exchange & Payment Service</h2></div>
-                    <div class="row title-info">
-                        Instantly exchange and convert your tokens
-                        <br> High liquidity, no waiting time
-                        <br> Blockchain-level security, no deposit is required
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 main-title-figure">
-                    <img src="images/figure.png" style="max-width: 100%;"></img>
-                </div>
-            </div>
+        <div class="col-md-12 text-center">
+          <h4 class="col-md-2 offset-md-5 text-uppercase font-900 blue">
+            properties
+            <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
+            <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
+            <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;right:0;z-index:1;"></span>
+          </h4>
         </div>
-        <div class="main-info">
-            <div class="main-about" id="about-section">
-                <h2>About KyberNetwork</h2>
-                <div class="row about-intro">
-                    <div>
-                        KyberNetwork is a new system which allows the exchange and conversion of digital assets.
-                        <br> We provide rich payment APIs and a new contract wallet that allow anyone to seamlessly receive payments from any token.
-                        <br> Users can also mitigate the risks of price fluctuations in the cryptocurrency world with our derivative trading.
-                        <br>
-                    </div>
+        <div class="col-md-10 offset-md-1">
+          <div class="row properties">
+            <div class="col-md-3 col-xs-12 text-center">
+              <div class="prop-item">
+                <span class="prop-item-img img1"></span>
+                <div class="text-center">
+                  <h5 class="text-capitalize font-900">Trustless &amp; Secure</h5>
                 </div>
-                <div class="about-value">
-                    <h3 class="property">Properties</h3>
-                    <div class="row about-value-content">
-                        <div class="col-md-4">
-                            <div>
-                                <strong>High liquidity.</strong> We maintain a reserve of all tokens to provide high liquidity. Get your tokens instantly when you trade.
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div>
-                                <strong>Trustless & Secure.</strong> Every operation happens on the smart contract. No trust is required. We never hold users' funds.
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div>
-                                <strong>Compatibility.</strong> Compatible with existing smart contracts. No changes are needed to integrate with KyberNetwork.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-write">
-                        <span>
-                            <a href="assets/KyberNetworkWhitepaper.pdf">White paper</a>
-                        </span>
-                    </div>
+                <div class="text-justify">
+                  <p>Every operation happens on the smart contract. No trust is required. We never hold users' funds.</p>
                 </div>
+              </div>
             </div>
-            <div class="main-app" id="application-section">
-                <h2>Applications</h2>
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 app-item">
-                        <div><img src="images/icon1.svg" /></div>
-                        <div>Exchange</div>
-                        <div class="app-item-body">
-                            Convert and exchange your tokens securely, instantly.
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 app-item">
-                        <div><img src="images/icon2.svg" /></div>
-                        <div>Proxy Payments</div>
-                        <div class="app-item-body">
-                            Pay to anyone in any token from your own token. We'll do the conversion and forward the payment instantly.
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 app-item">
-                        <div><img src="images/icon3.svg" /></div>
-                        <div>Derivatives</div>
-                        <div class="app-item-body">
-                            Get your dividends from a DAO soon and worry about the price fluctuation? Hedge with us.
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 app-item">
-                        <div><img src="images/icon4.svg" /></div>
-                        <div>Cross-chain payments</div>
-                        <div class="app-item-body">
-                            We allow you to receive payments from Bitcoin and other cryptocurrencies in Ether.
-                        </div>
-                    </div>
+            <div class="col-md-3 text-center">
+              <div class="prop-item">
+                <span class="prop-item-img img2"></span>
+                <div class="text-center">
+                  <h5 class="text-capitalize font-900">high quality</h5>
                 </div>
+                <div class="text-justify">
+                  <p>We maintain a reserve of all tokens to provide high liquidity. Get your tokens instantly when you trade.</p>
+                </div>
+              </div>
             </div>
-            <div class="main-plan" id="roadmap-section">
-                <h2>Our Roadmap</h2>
-                <div class="roadmap-wrapper">
-                    <div class="roadmap-content except-mobile">
-                        <div class="row plan-top" style="margin-left: 100px;">
-                            <div class="plan-item plan-1 col-sm-4 col-sm-offset-2">
-                                <div class="rotate-90">
-                                    Phase 1
-                                </div>
-                                <div class="plan-1-intro plan-intro">
-                                    Exchange and proxy payments between any tokens to and from Ether
-                                </div>
-                            </div>
-                            <div class="plan-3 plan-item col-sm-6">
-                                <div class="rotate-90">
-                                    Phase 3
-                                </div>
-                                <div class="plan-3-intro plan-intro">
-                                    Support trading other financial instruments
-                                </div>
-                            </div>
-                            <div style="clear: both;"></div>
-                        </div>
-                        <div class="plan-bar main-gradient"></div>
-                        <div class="row plan-bottom">
-                            <div class="plan-item plan-0 col-sm-4">
-                                <div class="rotate-90">
-                                    Phase 0
-                                </div>
-                                <div class="plan-1-intro plan-intro">
-                                    Launch on testnet
-                                </div>
-                            </div>
-                            <div class="plan-item plan-2 col-sm-4">
-                                <div class="rotate-90">
-                                    Phase 2
-                                </div>
-                                <div class="plan-1-intro plan-intro">
-                                    Support arbitrary token pairs
-                                </div>
-                            </div>
-                            <div class="plan-4 plan-item col-sm-4">
-                                <div class="rotate-90">
-                                    Phase 4
-                                </div>
-                                <div class="plan-1-intro plan-intro">
-                                    Support cross-chain trading
-                                </div>
-                            </div>
-                            <div style="clear: both;"></div>
-                        </div>
-                    </div>
-                    <div class="only-mobile row">
-                        <div class="col-xs-5 plan-m-left">
-                            <div class="plan-m-1">
-                                <div>Phase 1</div>
-                                <div>Exchange and proxy payments between any tokens to and from Ether</div>
-                            </div>
-                            <div class="plan-m-3">
-                                <div>Phase 3</div>
-                                <div>Support trading advanced financial instruments</div>
-                            </div>
-                        </div>
-                        <div class="col-xs-2 plan-m-center">
-                            <div class="plan-bar mobile-gradient">
-                            </div>
-                        </div>
-                        <div class="col-xs-5 plan-m-right">
-                            <div class="plan-m-0">
-                                <div>Phase 0</div>
-                                <div>Launch on testnet</div>
-                            </div>
-                            <div class="plan-m-2">
-                                <div>Phase 2</div>
-                                <div>Support arbitrary token pairs</div>
-                            </div>
-                            <div class="plan-m-3">
-                                <div>Phase 4</div>
-                                <div>Support cross-chain trading</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-3 text-center">
+              <div class="prop-item">
+                <span class="prop-item-img img3"></span>
+                <div class="text-center">
+                  <h5 class="text-capitalize font-900">instant trade</h5>
                 </div>
+                <div class="text-justify">
+                  <p>No waiting for confirmations, no deposit required. Instantly get your tokens once your transaction is included in the blockchain!</p>
+                </div>
+              </div>
             </div>
-            <div class="main-team" id="team-section">
-                <h2>The team</h2>
-                <div class="team-title">
-                    <!--  <div class="indicator">
-                        </div> -->
-                    <div class="title">
-                        <h4>Our members</h4>
-                        <p>Security experts, experienced smart contract developers</p>
-                    </div>
-                    <div style="clear: both;"></div>
+            <div class="col-md-3 text-center">
+              <div class="prop-item">
+                <span class="prop-item-img img4"></span>
+                <div class="text-center">
+                  <h5 class="text-capitalize font-900">compatibility</h5>
                 </div>
-                
-                <div class="member-info team-info">
-                    <!-- <div class="coltrol-member except-desktop"  current-page="0">
-                        <a class="back_btn">Back</a>
-                        <a class="next_btn">Next</a>                        
-                    </div> -->
-                    <div class="row team-content">
-                        <div class="col-md-3 col-sm-6 team-item">
-                            <div><img src="images/LoiLuu.png" /></div>
-                            <div>Loi Luu</div>
-                            <div class="bio">
-                                <input class="read-more-state" id="loi-bio" type="checkbox">
-                                <p class="member-bio read-more-wrap">
-                                    Loi Luu is a researcher working on cryptocurrencies, smart contract security and distributed consensus algorithms. He is also a regular invited speaker at Bitcoin and Ethereum workshops such as DevCon2,
-                                    <span class="read-more-target">
-                                            EdCon, Scaling Bitcoin.<br/>
-                                            Loi believes in the force of the Ethereum and Blockchain technology. Much of his work revolves around this community. He developed <a href="https://github.com/melonproject/oyente">Oyente</a>, the first open-source security analyzer for Ethereum smart contracts. Loi also cofounded SmartPool, another open source  project which embraces decentralization of mining pools in existing cryptocurrency. He continues to champion decentralisation and trustless properties of the Blockchain with KyberNetwork, taking inspiration and developing value for the community. 
-                                        </span>
-                                    <label class="read-more-trigger" for="loi-bio"></label>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 team-item">
-                            <div><img src="images/Yaron.png" /></div>
-                            <div>Yaron Velner</div>
-                            <div class="bio">
-                                <input class="read-more-state" id="yaron-bio" type="checkbox">
-                                <p class="member-bio read-more-wrap">
-                                    Yaron Velner is a researcher and a co-founder of the SmartPool project. His research is focused on aspects of game theory incentives in blockchain protocols and formal verification of smart contracts. He holds a PhD
-                                    <span class="read-more-target">
-                                            in Computer Science from Tel Aviv University. In his PhD thesis he, investigated applications of game theory techniques to formal verification of computer programs and systems. <br>
-                                            Yaron is also an experienced software developer with over 10 years of experience as a senior software engineer and a technical leader at EZchip semi-conductors. At EZchip he was a member in the data structure and algorithm team, which developed novel data structures for IP routing.
-                                        </span>
-                                    <label class="read-more-trigger" for="yaron-bio"></label>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 team-item">
-                            <div><img src="images/victor.png" /></div>
-                            <div>Victor Tran</div>
-                            <div class="bio">
-                                <input class="read-more-state" id="victor-bio" type="checkbox">
-                                <p class="member-bio read-more-wrap">
-                                    Victor Tran is a senior backend engineer and Linux system administrator. He has experience in developing and building infrastructure for multiple social marketing platforms and advertising networks. He is interested in
-                                    <span class="read-more-target">
-                                            building high performance multi-platform applications.
-                                            Victor co-founded and was CTO of several startups in social marketing. He built and maintained platforms which handled millions of monthly active users. Victor is currently the lead engineer in the SmartPool project.
-                                        </span>
-                                    <label class="read-more-trigger" for="victor-bio"></label>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 team-item">
-                            <div><img src="images/cuong.png" /></div>
-                            <div>Cuong Nguyen</div>
-                            <div>
-                                Cuong is a senior web developer with several years building interesting web applications. He recently spends most of his time on playing around with various blockchain platforms including Bitcoin, Ethereum and IBM's Fabric ledger.
-                            </div>
-                        </div>
-                    </div>
+                <div class="text-justify">
+                  <p>Compatible with existing smart contracts. No changes are needed to integrate with KyberNetwork.</p>
                 </div>
-                <div class="advisor-title">
-                    <div>
-                        <!--     <div class="indicator"> -->
-                    </div>
-                    <div class="title">
-                        <h4>Our advisors</h4>
-                        <p>People with wisdom and knowledge</p>
-                    </div>
-                    <div style="clear: both;"></div>
-                </div>
+              </div>
             </div>
-            <div>
-                <div class="row  team-content">
-                    <div class="col-md-3 col-sm-6 team-item">
-                        <div><img src="images/wong-lee-hong.jpg" /></div>
-                        <div>Wong Lee Hong</div>
-                        <div class="bio">
-                            <input class="read-more-state" id="wong-bio" type="checkbox">
-                            <p class="member-bio read-more-wrap">
-                                Wong Lee Hong career spans across various industries over 3 decades. He has extensive distribution and business development experience in consumer electronic, multimedia, computer gaming, Internet and the banking sectors. The
-                                <span class="read-more-target">
-                                            second half of his career was spent developing the Internet Banking capability of a major financial institution, venture capital activities in strategic startups and regulatory management role, dealing with banking regulators in Asia in matters relating to banking technology and operations. At present, he is a Blockchain enthusiast and investor.
-                                        </span>
-                                <label class="read-more-trigger" for="wong-bio"></label>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 team-item">
-                        <div><img src="images/hoe-lon.JPG" /></div>
-                        <div>Leng Hoe Lon</div>
-                        <div class="bio">
-                            <input class="read-more-state" id="leng-bio" type="checkbox">
-                            <p class="member-bio read-more-wrap">
-                                Leng Hoe Lon co-founded Shentilium with National University of Singapore, with the aim of using the latest data-driven technology to drive business decisions and gain competitive edge. He also co-founded TrackRecord Asia, with the vision that
-                                <span class="read-more-target">
-                                            anyone can learn to trade in the financial markets profitably within a professional risk management framework. Prior to this, he held various positions in the financial industry including Deustsche Bank (London and Singapore), JPMorgan (Singapore), ABN Amro (Singapore). He was a Managing Director in Goldman Sachs’ Asia Macro Trading group in HK and Asian FX trader in London. He was also CEO of Tudor Capital Singapore, a global macro hedge fund.
-                                        </span>
-                                <label class="read-more-trigger" for="leng-bio"></label>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 team-item">
-                        <div><img src="images/vitalik-buterin.jpg" /> </div>
-                        <div>Vitalik Buterin</div>
-                        <div class="bio">
-                            <input class="read-more-state" id="vitalik-bio" type="checkbox">
-                            <p class="member-bio read-more-wrap">
-                                Vitalik is the Founder and Chief Scientist of Ethereum. He is also both the Founder and a writer for Bitcoin Magazine, a venture that marked the beginning of his career in crypto in 2011. He is interested in creating secure, efficient,
-                                <span class="read-more-target">
-                                            and trustworthy systems and advises a number of projects in the crypto space.
-                                        </span>
-                                <label class="read-more-trigger" for="vitalik-bio"></label>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 team-item">
-                        <div><img src="images/prateek.jpg" /></div>
-                        <div>Prateek Saxena</div>
-                        <div class="bio">
-                            <input class="read-more-state" id="prateek-bio" type="checkbox">
-                            <p class="member-bio read-more-wrap">
-                                Prateek Saxena is a research professor in computer science at National University of Singapore. He works on blockchains and computer security. His research has influenced the design of browser platforms, web standards and app stores widely
-                                <span class="read-more-target">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  <section id="compare" class="page-section">
+    <h2 class="text-uppercase blue font-900 col-md-2 offset-md-5 text-center">
+      compare
+      <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;right:0;z-index:1;"></span>
+    </h2>
+    <div class="container-fluid padding-0">
+      <div class="row">
+        <div class="col-md-2 text-left compare-item padding-0">
+          <ul>
+            <li class="first text-center blue">
+              Kraken/Poloniex
+              <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;top:-3px;right:-3px;z-index:1;"></span>
+              <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:-3px;right:-3px;z-index:1;"></span>
+            </li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; trading cost (low)</p></li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; liquidity (high)</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; instant trades</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; trustless</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; on-chain</p></li>
+            <li class="last"><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; secure against attacks</p></li>
+            <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:-3px;right:-3px;z-index:1;"></span>
+          </ul>
+        </div>
+        <div class="col-md-2 text-left compare-item padding-0">
+          <ul>
+            <li class="first text-center blue">
+              Shapshift
+              <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;top:-3px;right:-3px;z-index:1;"></span>
+              <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:-3px;right:-3px;z-index:1;"></span>
+            </li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; trading cost (low)</p></li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; liquidity (high)</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; instant trades</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; trustless</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; on-chain</p></li>
+            <li class="last"><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; secure against attacks</p></li>
+            <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:-3px;right:-3px;z-index:1;"></span>
+          </ul>
+        </div>
+        <div class="col-md-2 text-left compare-item padding-0">
+          <ul>
+            <li class="first text-center blue">
+              Coinbase
+              <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;top:-3px;right:-3px;z-index:1;"></span>
+              <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:-3px;right:-3px;z-index:1;"></span>
+            </li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; trading cost (low)</p></li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; liquidity (high)</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; instant trades</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; trustless</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; on-chain</p></li>
+            <li class="last"><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; secure against attacks</p></li>
+            <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:-3px;right:-3px;z-index:1;"></span>
+          </ul>
+        </div>
+        <div class="col-md-2 text-left compare-item padding-0">
+          <ul>
+            <li class="first text-center blue">
+              EtherDelta
+              <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;top:-3px;right:-3px;z-index:1;"></span>
+              <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:-3px;right:-3px;z-index:1;"></span>
+            </li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; trading cost (low)</p></li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; liquidity (high)</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; instant trades</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; trustless</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; on-chain</p></li>
+            <li class="last"><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; secure against attacks</p></li>
+            <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:-3px;right:-3px;z-index:1;"></span>
+          </ul>
+        </div>
+        <div class="col-md-2 text-left compare-item padding-0">
+          <ul>
+            <li class="first text-center blue">
+              Swap.tech
+              <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;top:-3px;right:-3px;z-index:1;"></span>
+              <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:-3px;right:-3px;z-index:1;"></span>
+            </li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; trading cost (low)</p></li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; liquidity (high)</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; instant trades</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; trustless</p></li>
+            <li><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; on-chain</p></li>
+            <li class="last"><p class="text-capitalize"><span class="grey" aria-hidden="true" data-icon="&#xe051;"></span>&nbsp; secure against attacks</p></li>
+            <span style="width:5px;height:5px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:-3px;right:-3px;z-index:1;"></span>
+          </ul>
+        </div>
+        <div class="col-md-2 text-left compare-item padding-0">
+          <ul>
+            <li class="first text-center kyber-item">KyberNetwork</li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; trading cost (low)</p></li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; liquidity (high)</p></li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; instant trades</p></li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; trustless</p></li>
+            <li><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; on-chain</p></li>
+            <li class="last"><p class="text-capitalize font-900"><span class="blue" aria-hidden="true" data-icon="&#xe052;"></span>&nbsp; secure against attacks</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  -->
+
+  <section id="application" class="page-section">
+    <h2 class="text-uppercase blue font-900 col-md-4 offset-md-4 text-center">
+      applications
+      <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;right:0;z-index:1;"></span>
+    </h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="row">
+            <div class="col-md-3 app-item text-center">
+              <span class="app-item-img img1"></span>
+              <h4 class="text-capitalize font-900 blue">exchange</h4>
+              <p>Convert and exchange your tokens securely, instantly.</p>
+            </div>
+            <div class="col-md-3 app-item text-center">
+              <span class="app-item-img img2"></span>
+              <h4 class="text-capitalize font-900 blue">proxy payments</h4>
+              <p>Pay to anyone in any token from your own token. We'll do the conversion and forward the payment seamlessly.</p>
+            </div>
+            <div class="col-md-3 app-item text-center">
+              <span class="app-item-img img3"></span>
+              <h4 class="text-capitalize font-900 blue">derivatives</h4>
+              <p>Get your dividends from a DAO soon and worry about the price fluctuation? Hedge with us.</p>
+            </div>
+            <div class="col-md-3 app-item text-center">
+              <span class="app-item-img img4"></span>
+              <h4 class="text-capitalize font-900 blue">cross-chain payments</h4>
+              <p>Receive payments from Bitcoin and other cryptocurrencies in Ether.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="page-section">
+    <h2 class="text-uppercase blue font-900 col-md-2 offset-md-5 text-center">
+      Roadmap
+      <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;right:0;z-index:1;"></span>
+    </h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 plan-bar">
+          <div class="gradient"></div>
+          <div class="text-center step step1">
+            <h6 class="text-capitalize font-700">Aug 2017</h6>
+            <img src="img/indicator-0.png" alt="">
+            <h6 class="text-center">Launch on Testnet</h6>
+          </div>
+          <div class="text-center step step2">
+            <h6 class="text-capitalize font-700">Q1 2018</h6>
+            <img src="img/indicator-2.png" alt="">
+            <h6 class="text-center">First mainnet launch, support trading between tokens and ETH</h6>
+          </div>
+          <div class="text-center step step3">
+            <h6 class="text-capitalize font-700">Q2 2018</h6>
+            <img src="img/indicator-3.png" alt="">
+            <h6 class="text-center">Support arbitrary token pairs.</h6>
+          </div>
+          <div class="text-center step step4">
+            <h6 class="text-capitalize font-700">Q3 2018</h6>
+            <img src="img/indicator-4.png" alt="">
+            <h6 class="text-center">Support trading other financial instruments</h6>
+          </div>
+          <div class="text-center step step5">
+            <h6 class="text-capitalize font-700">Early 2019</h6>
+            <img src="img/indicator-5.png" alt="">
+            <h6 class="text-center">Support cross-chain trading</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="team" class="page-section">
+    <h2 class="text-uppercase blue font-900 col-md-2 offset-md-5 text-center">
+      team
+      <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;right:0;z-index:1;"></span>
+    </h2>
+    <div class="container-fluid">
+      <di class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="row">
+            <div class="col-md-3 member text-center">
+              <img class="mx-auto d-block" src="img/LoiLuu.png" alt="">
+              <p class="social">
+                <a href="https://www.comp.nus.edu.sg/~loiluu/" <i class="fa fa-home" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/loi_luu"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/loiluu/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </p>
+              <h6 class="text-capitalize font-900">Loi Luu</h6>
+              <h6 class="text-capitalize grey">CEO &amp; CoFounder</h6>
+              <div class="text-justify">
+                  <input class="read-more-state" id="loi-bio" type="checkbox" tabindex="0">
+                  <p class="member-bio read-more-wrap">
+                      Loi Luu is a researcher working on cryptocurrencies, smart contract security and distributed consensus algorithms.
+                              He is also a regular invited speaker at Bitcoin and Ethereum workshops
+                          <span class="read-more-target">
+                          such as DevCon2, EDCON <br>
+                              Loi believes in the force of the Ethereum and Blockchain technology. Much of his work revolves around this community. He developed <a href="https://github.com/melonproject/oyente" tabindex="0">Oyente</a>, the first open-source security analyzer for Ethereum smart contracts. Loi also cofounded <a href="http://smartpool.io" tabindex="0">SmartPool</a>, another open source  project which embraces decentralization of mining pools in existing cryptocurrency. He continues to champion decentralisation and trustless properties of the Blockchain with KyberNetwork, taking inspiration and developing value for the community.
+                          </span>
+                      <label class="read-more-trigger" for="loi-bio"></label>
+                  </p>
+              </div>
+            </div>
+            <div class="col-md-3 member text-center">
+              <img class="mx-auto d-block" src="img/Yaron.png" alt="">
+              <p class="social">
+                <a href="https://twitter.com/yaron_velner"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                 <a href="https://www.linkedin.com/in/yaron-velner-7a8aa4107/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </p>
+              <h6 class="text-capitalize font-900">Yaron Velner</h6>
+              <h6 class="text-capitalize grey">CTO &amp; CoFounder</h6>
+              <div class="text-justify">
+                  <input class="read-more-state" id="yaron" type="checkbox" tabindex="0">
+                  <p class="member-bio read-more-wrap">
+                      Yaron Velner holds a PhD in computer science from Tel Aviv University. His research is focused on game theory incentives in blockchain protocols  and formal verification of smart contracts. <span class="read-more-target">He has found several bugs in the Ethereum bug bounty program.<br />
+                      Yaron is also an experienced software developer with over 10 years as a senior software engineer and a technical leader at EZchip semi-conductors. He was a member in the data structure and algorithm team, which developed novel data structures for IP routing.
+                      </span>
+                      <label class="read-more-trigger" for="yaron"></label>
+                  </p>
+              </div>
+            </div>
+            <div class="col-md-3 member text-center">
+              <img class="mx-auto d-block" src="img/victor.png" alt="">
+              <p class="social">
+                <a href="https://twitter.com/vutran54"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://github.com/tranvictor"><i class="fa fa-github" aria-hidden="true"></i></a>
+              </p>
+              <h6 class="text-capitalize font-900">Victor Tran</h6>
+              <h6 class="text-capitalize grey">Lead Engineer &amp; CoFounder</h6>
+              <div class="text-justify">
+                  <input class="read-more-state" id="loi-bio3" type="checkbox" tabindex="0">
+                  <p class="member-bio read-more-wrap">
+                      Victor Tran is a senior backend engineer and Linux system administrator. He has experience in developing large-scale infrastructures for multiple social marketing platforms and <span class="read-more-target"> advertising networks.
+                      He is interested in building high performance multi-platform applications. Victor has been involved in blockchain and cryptocurrency development since early 2016 and is a lead engineer at the SmartPool project.
+                  </span>
+                      <label class="read-more-trigger" for="loi-bio3"></label>
+                  </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 member text-center">
+              <img class="mx-auto d-block" src="img/joseph.jpg" alt="">
+              <p class="social">
+              </p>
+              <h6 class="text-capitalize font-900">Joseph Lee</h6>
+              <h6 class="text-capitalize grey">Lead Trading Platform</h6>
+              <div class="text-justify">
+                  <input class="read-more-state" id="jose-bio" type="checkbox" tabindex="0">
+                  <p class="member-bio read-more-wrap">
+
+            Joseph is an experienced developer in automated algorithmic trading systems, and is the founder of Future Sense Sdn Bhd, a company that develops Insurance Tech and Banking <span class="read-more-target"> solutions. <br>
+
+Formerly, Joseph was the Assistant Vice President of ABN AMRO (M) in the Consumer Banking, Trading Desk; and prior to that, Assistant Vice President in Bank Of America (M) heading the Global Payments, Int'l Fund Transfer & Deployment for the Malaysian unit.
+                  </span>
+                      <label class="read-more-trigger" for="jose-bio"></label>
+                  </p>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 member text-center">
+              <img class="mx-auto d-block" src="img/tn.jpg" alt="">
+              <p class="social">
+                <a href="https://www.linkedin.com/in/leetsunngai/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+              </p>
+              <h6 class="text-capitalize font-900">Lee Tsun Ngai</h6>
+              <h6 class="text-capitalize grey">Head of Business Development</h6>
+              <div class="text-justify">
+                  <input class="read-more-state" id="tn-bio" type="checkbox" tabindex="0">
+                  <p class="member-bio read-more-wrap">
+                      Tsun Ngai has been working in the data science sector and has been involved in projects that span across FinTech, financial sector and government agencies.
+                      <span class="read-more-target">
+                              He earned a Bachelor in Business Management and graduated with Honors from Singapore Management University. He has been involved in the blockchain space since 2015. He started out by mining Ether since it was first launched in 2015 and has helped and collaborated with various Singapore blockchain startups.
+                              Aside from that, he is fond of diving and is always on a lookout for good reads.
+                          </span>
+                      <label class="read-more-trigger" for="tn-bio"></label>
+                  </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 member text-center">
+              <img class="mx-auto d-block" src="img/phuong.jpg" alt="">
+              <p class="social">
+                <a href="https://twitter.com/sanvivu"><i class="fa fa-twitter" aria-hidden="true">
+                <a href="https://sandra-vu.com/" <i class="fa fa-home" aria-hidden="true"></i></a>
+              </p>
+
+              </i></a>
+              <h6 class="text-capitalize font-900">Phuong Vu</h6>
+              <h6 class="text-capitalize grey"> Designer</h6>
+              <div class="text-justify">
+                  <input class="read-more-state" id="phuong-bio" type="checkbox" tabindex="0">
+                  <p class="member-bio read-more-wrap">
+                      Phuong worked in law before deciding to turn her love of design and programming into a career.
+
+                      She likes exploring art museums and public spaces to learn how people interact with forms <span class="read-more-target"> and paths around them.
+
+                      Phuong is a hobby athlete. She finished a duathlon and now trains in Brazilian Jujitsu and MMA.
+                      </span>
+                      <label class="read-more-trigger" for="phuong-bio"></label>
+                  </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 member text-center">
+              <img class="mx-auto d-block" src="img/cuong.png" alt="">
+
+              <h6 class="text-capitalize font-900">Andrew Nguyen</h6>
+              <h6 class="text-capitalize grey">Web Developer</h6>
+              <div class="text-justify">
+                  <input class="read-more-state" id="loi-bio4" type="checkbox" tabindex="0">
+                  <p class="member-bio read-more-wrap">
+                      Andrew Nguyen is a senior web developer with several years building web applications in reputable IT companies.
+
+                      He recently spends most of his time on various blockchain platforms <span class="read-more-target">including Bitcoin, Ethereum and IBM's Fabric ledger.
+
+                          </span>
+                      <label class="read-more-trigger" for="loi-bio4"></label>
+                  </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 member text-center">
+              <img class="mx-auto d-block" src="img/wong-lee-hong.jpg" alt="">
+              <h6 class="text-capitalize font-900">Wong Lee Hong</h6>
+              <h6 class="text-capitalize grey">Executive Advisor</h6>
+              <div class="text-justify">
+                  <input class="read-more-state" id="loi-bio5" type="checkbox" tabindex="0">
+                  <p class="member-bio read-more-wrap">
+
+                                Wong Lee Hong career spans across various industries over 3 decades. He has extensive distribution and business development experience in consumer electronic, multimedia, <span class="read-more-target"> computer gaming, Internet and the banking sectors.
+                                The
+                                second half of his career was spent developing the Internet Banking capability of a major financial institution, venture capital activities in strategic startups and regulatory management role, dealing with banking regulators in Asia in matters relating to banking technology and operations. At present, he is a Blockchain enthusiast and investor.
+
+                          </span>
+                      <label class="read-more-trigger" for="loi-bio5"></label>
+                  </p>
+              </div>
+            </div>
+            <div class="col-md-3 member text-center">
+              <img class="mx-auto d-block" src="img/hoe-lon.JPG" alt="">
+              <p class="social">
+
+              </p>
+              <h6 class="text-capitalize font-900">Leng Hoe Lon</h6>
+              <h6 class="text-capitalize grey">Executive Advisor</h6>
+              <div class="text-justify">
+                  <input class="read-more-state" id="loi-bio6" type="checkbox" tabindex="0">
+                  <p class="member-bio read-more-wrap">
+
+                                Leng Hoe Lon co-founded Shentilium with National University of Singapore, with the aim of using the latest data-driven technology to drive business decisions and gain competitive <span class="read-more-target"> edge. He also co-founded TrackRecord Asia, with the vision that
+
+
+                                anyone can learn to trade in the financial markets profitably within a professional risk management framework. Prior to this, he held various positions in the financial industry including Deustsche Bank (London and Singapore), JPMorgan (Singapore), ABN Amro (Singapore). He was a Managing Director in Goldman Sachs’ Asia Macro Trading group in HK and Asian FX trader in London. He was also CEO of Tudor Capital Singapore, a global macro hedge fund.
+
+                          </span>
+                      <label class="read-more-trigger" for="loi-bio6"></label>
+                  </p>
+              </div>
+            </div>
+            <div class="col-md-3 member text-center">
+              <img class="mx-auto d-block" src="img/vitalik-buterin.jpg" alt="">
+              <p class="social">
+              </p>
+              <h6 class="text-capitalize font-900">Vitalik Buterin</h6>
+              <h6 class="text-capitalize grey">Advisor</h6>
+              <div class="text-justify">
+                  <input class="read-more-state" id="loi-bio7" type="checkbox" tabindex="0">
+                  <p class="member-bio read-more-wrap">
+                      Vitalik is the Founder and Chief Scientist of Ethereum. He is also both the Founder and a writer for Bitcoin Magazine, a venture that marked the beginning of his career in cryptocurrency in 2011.
+                      <span class="read-more-target"> He is interested in creating secure, efficient,
+
+                                            and trustworthy systems and advises a number of projects in the cryptocurrency space.
+                          </span>
+                      <label class="read-more-trigger" for="loi-bio7"></label>
+                  </p>
+              </div>
+            </div>
+            <div class="col-md-3 member text-center">
+              <img class="mx-auto d-block" src="img/prateek.jpg" alt="">
+              <p class="social">
+
+              </p>
+              <h6 class="text-capitalize font-900">Prateek Saxena</h6>
+              <h6 class="text-capitalize grey">Advisor</h6>
+              <div class="text-justify">
+                  <input class="read-more-state" id="loi-bio8" type="checkbox" tabindex="0">
+                  <p class="member-bio read-more-wrap">
+                      Prateek Saxena is a research professor in computer science at National University of Singapore. He works on blockchains and computer security. His research has influenced the design of <span class="read-more-target"> browser platforms, web standards and app stores widely
+
                                             used today. He has received several premier awards such as the MIT TR35 Asia.
                                         </span>
-                                <label class="read-more-trigger" for="prateek-bio"></label>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                      </span>
+                      <label class="read-more-trigger" for="loi-bio8"></label>
+                  </p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-    <footer>
-        <div class="row except-mobile">
-            <div class="footer-contact col-sm-6">
-                <div class="contact-text">Contact us</div>
-                <div class="contact-info">
-                    <div><img src="images/twitter.svg"></img><a href="https://twitter.com/KyberNetwork">@KyberNetwork</a></div>
-                    <div><img src="images/slack.svg"></img><a href=" http://slack.kyber.network">KyberNetwork</a></div>
-                    <div><img src="images/email.svg"></img><a href="mailto:hello@kyber.network">hello@kyber.network</a></div>
-                </div>
-            </div>
-            <div class="subscribe-box col-sm-6">
-                <div class="subscribe-text">Subscribe to Kyber.Network</div>
-                <!-- Begin MailChimp Signup Form -->
-                <div id="mc_embed_signup_f">
-                    <div class="subscribe-form">
-                        <form action="//network.us15.list-manage.com/subscribe/post?u=6b7b41e94cc1338541eeae656&amp;id=c832c80344" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                <input type="text" name="b_6b7b41e94cc1338541eeae656_c832c80344" tabindex="-1" value="">
-                            </div>
-                            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-submit">
-                                <span class="subscribe-submit"></span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-                <!--End mc_embed_signup-->
-                <div class="copyright">
-                    <strong>Kyber.network</strong> - All rights reserved - 2017 ©
-                </div>
-            </div>
-        </div>
-        <div class="row only-mobile">
-            <div class="subscribe-box col-xs-12">
-                <div class="subscribe-text">Subscribe to KyberNetwork</div>
-                <!-- Begin MailChimp Signup Form -->
-                <div id="mc_embed_signup_f">
-                    <div class="subscribe-form">
-                        <form action="//network.us15.list-manage.com/subscribe/post?u=6b7b41e94cc1338541eeae656&amp;id=c832c80344" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                <input type="text" name="b_6b7b41e94cc1338541eeae656_c832c80344" tabindex="-1" value="">
-                            </div>
-                            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-submit">
-                                <span class="subscribe-submit"></span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-                <!--End mc_embed_signup-->
-            </div>
-            <div class="footer-contact col-xs-12">
-                <div class="contact-text">Contact us</div>
-                <div class="contact-info">
-                    <div class="col-xs-12" style="text-align: left;"><img src="images/twitter.svg"></img><a href="https://twitter.com/KyberNetwork">@KyberNetwork</a></div>
-                    <div class="col-xs-12" style="text-align: left;"><img src="images/slack.svg"></img><a href=" http://slack.kyber.network">KyberNetwork</a></div>
-                    <div class="col-xs-12" style="text-align: left;"><img src="images/email.svg"></img><a href="mailto:hello@kyber.network">hello@kyber.network</a></div>
-                </div>
-            </div>
-            <div class="copyright col-xs-12">
-                <strong>Kyber.network</strong> - All rights reserved - 2017 ©
-            </div>
-        </div>
-    </footer>
-     <div class="only-mobile">
-        <div id="to-top-btn" class="to-top">
-            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-        </div>
-    </div>
-</body>
+  </section>
 
+  <section id="faqs" class="page-section">
+    <h2 class="text-uppercase blue font-900 col-md-4 offset-md-4 text-center">
+      frequently asked questions
+      <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;right:0;z-index:1;"></span>
+    </h2>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 offset-md-2 question-list">
+          <div class="faq-item">
+            <input class="read-more-state" id="faq1" type="checkbox" tabindex="0">
+            <p class="member-bio read-more-wrap">
+              <label class="read-more-trigger" for="faq1"><span class="fs1" aria-hidden="true" data-icon="P"></span>&nbsp; Will KyberNetwork be doing pre-sale and token launch, and when would they occur?</label><br>
+              <span class="read-more-target">
+Yes, we will be doing a pre-sale and token launch sometime fall this year, but we have not locked down an exact date yet. We will announce our plans for both pre-sale and token launch as soon as we are ready to reveal.
+              </span>
+            </p>
+          </div>
+          <div class="faq-item">
+            <input class="read-more-state" id="faq2" type="checkbox" tabindex="0">
+            <p class="member-bio read-more-wrap">
+              <label class="read-more-trigger" for="faq2"><span class="fs1" aria-hidden="true" data-icon="P"></span>&nbsp; How is KyberNetwork different from other decentralized exchanges that are already in the market?</label><br>
+              <span class="read-more-target">
+Our exchange platform is first to provide on-chain, trustless and instant trades with high liquidity.  For more information, please refer to our <a href="http://kyber.network/assets/KyberNetworkWhitepaper.pdf">whitepaper</a>.
+
+              </span>
+            </p>
+          </div>
+          <div class="faq-item">
+            <input class="read-more-state" id="faq3" type="checkbox" tabindex="0">
+            <p class="member-bio read-more-wrap">
+              <label class="read-more-trigger" for="faq3"><span class="fs1" aria-hidden="true" data-icon="P"></span>&nbsp; What is the main difference in approach towards token convertibility between KyberNetwork and Bancor Protocol?</label><br>
+              <span class="read-more-target">
+                  Bancor uses a fixed formula to determine the price of the token, while KyberNetwork lets the reserve managers determine the price. To become a reserve manager at KyberNetwork,  user needs to register with and be approved by the operator.
+              </span>
+            </p>
+          </div>
+          <div class="faq-item">
+            <input class="read-more-state" id="faq4" type="checkbox" tabindex="0">
+            <p class="member-bio read-more-wrap">
+              <label class="read-more-trigger" for="faq4"><span class="fs1" aria-hidden="true" data-icon="P"></span>&nbsp; What is the main difference in approach towards token convertibility between KyberNetwork and 0x Project?</label><br>
+              <span class="read-more-target">
+
+                0x utilizes offline channels to match makers and takers, but KyberNetwork matches and processes the order on-chain immediately. 0x's approach is to bring the order book off-chain and then execute the settlement on-chain. On the other hand, KyberNetwork's main proposition is to support on-chain and instant trades with guaranteed liquidity.
+              </span>
+            </p>
+          </div>
+          <div class="faq-item">
+            <input class="read-more-state" id="faq5" type="checkbox" tabindex="0">
+            <p class="member-bio read-more-wrap">
+              <label class="read-more-trigger" for="faq5"><span class="fs1" aria-hidden="true" data-icon="P"></span>&nbsp; How is the MVP coming along, and when can we expect to see it?</label><br>
+              <span class="read-more-target">
+                The MVP is coming along great. It should be ready between late July to mid-August.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img src="img/faq.jpg" alt="" class="img-fluid" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="page-section">
+    <h2 class="text-uppercase blue font-900 col-md-2 offset-md-5 text-center">
+      On the News
+      <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;right:0;z-index:1;"></span>
+    </h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="https://cdn-images-1.medium.com/max/800/1*ivkUwvVum4Yj5vhD1-0rWg.jpeg" alt="KyberNetwork: Hello World!">
+            <div class="card-block">
+              <h4 class="card-title">KyberNetwork: Hello World!</h4>
+              <p class="card-text">
+                The next generation of decentralized exchange and on-chain payment service
+                When Ethereum was first introduced, many people had anticipated that it would become the mammoth it is today...</p>
+              <a href="https://blog.kyber.network/kybernetwork-hello-world-e70ee7b21d94" class="text-uppercase">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="https://cdn-images-1.medium.com/max/800/1*7z0zDvYx2Ilibs27aP1mvA.jpeg" alt="KyberNetwork: Addressing Crypto-assets’ Liquidity">
+            <div class="card-block">
+              <h4 class="card-title">Addressing Crypto-assets’ Liquidity</h4>
+              <p class="card-text">Since the start of 2017, the growth of the combined value of all crypto-assets has been sensational. At the beginning of the year, the capitalization was US$16 billion, but it has since increased...</p>
+              <a href="https://blog.kyber.network/addressing-crypto-assets-liquidity-b01326a18b34" class="text-uppercase">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 text-center seemore">
+          <a href="https://blog.kyber.network" class="text-uppercase kyber-btn white">read more</a>
+        </div>
+      </div>
+    </div>
+    <!--
+    <h2 class="text-uppercase blue font-900 col-md-4 offset-md-5 text-center">
+      Strategics Partners
+      <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;right:0;z-index:1;"></span>
+    </h2>
+    <div class="container-fluid partner">
+      <div class="row">
+        <div class="col-md-2">
+          <img class="mx-auto d-block" src="img/partner1.jpg" alt="">
+        </div>
+        <div class="col-md-2">
+          <img class="mx-auto d-block" src="img/partner2.jpg" alt="">
+        </div>
+        <div class="col-md-2">
+          <img class="mx-auto d-block" src="img/partner3.jpg" alt="">
+        </div>
+        <div class="col-md-2">
+          <img class="mx-auto d-block" src="img/partner4.jpg" alt="">
+        </div>
+        <div class="col-md-2">
+          <img class="mx-auto d-block" src="img/partner5.jpg" alt="">
+        </div>
+        <div class="col-md-2">
+          <img class="mx-auto d-block" src="img/partner6.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    -->
+    <h2 class="text-uppercase blue font-900 col-md-4 offset-md-4 text-center">
+      Financial partners
+      <span style="width:calc(100% - 5px);border-top:1px solid #3196ae;position:absolute;bottom:4px;left:calc(1%);z-index:0;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;left:0;z-index:1;"></span>
+      <span style="width:10px;height:10px;background:#3b3b3c;border-radius:50%;position:absolute;bottom:0;right:0;z-index:1;"></span>
+    </h2>
+    <div class="container-fluid partner">
+      <div class="row">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-2">
+          <a href="http://hyperchain.capital">
+            <img class="mx-auto d-block" src="img/hyperchain.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="page-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="row">
+            <div class="col-md-3 text-left">
+              <h5 class="text-capitalize font-400">KyberNetwork</h5>
+              <p>
+                <a class="circle" href="https://twitter.com/kybernetwork"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="circle" href="https://github.com/kybernetwork"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a class="circle" href="http://slack.kyber.network"><i class="fa fa-slack" aria-hidden="true"></i></a>
+                <a class="circle" href="mailto:hello@kyber.network"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              </p>
+              <p class="text-capitalize">copyright &copy; 2017 KyberNetwork.</p>
+              <p>All rights reserved.</p>
+            </div>
+            <div class="col-md-5 text-left">
+              <h5 class="text-capitalize font-400">Social updates</h5>
+              <a class="text-capitalize font-400 twitter-timeline" href="https://twitter.com/KyberNetwork">Tweets by KyberNetwork</a>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-md-4 text-left">
+              <h5 class="text-capitalize font-400">Subscribe to our newsletter</h5>
+              <form action="//network.us15.list-manage.com/subscribe/post?u=6b7b41e94cc1338541eeae656&amp;id=c832c80344" method="post" id="mc-embedded-subscribe-form-top" name="mc-embedded-subscribe-form-top" class="validate" target="_blank" novalidate>
+                <input style="width: 95%;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your Email" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_6b7b41e94cc1338541eeae656_c832c80344" tabindex="-1" value="">
+                </div>
+                <button type="submit" name="subscribe" id="mc-embedded-subscribe-top" class="subscribe-submit subscribe-btn-top">
+                  &#xf0e0;
+                </button>
+              </form>
+              <br>
+              <p>Subscribe to our mailing list to get the updates to your email.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/hammer.min.js"></script>
+  <script src="js/sequence.js"></script>
+  <script src="js/sequence-theme.modern-slide-in.js"></script>
+</body>
 </html>
