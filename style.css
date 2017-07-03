@@ -215,6 +215,17 @@ background-size: cover; }
 .bold {
  font-weight:900;
 }
+.list-benefits-unique {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.list-benefits-unique li {
+	background:url('img/ico-bullet-16.svg') 0% 75% no-repeat;
+	padding-left:55px;  /*spacing between bullet and text*/
+	height: 42px;
+}
+
 .list-benefits {
 	list-style-type: none;
 	margin: 0;

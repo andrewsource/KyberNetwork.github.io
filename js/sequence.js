@@ -171,7 +171,7 @@ function defineSequence(imagesLoaded, Hammer) {
       /* --- Keyboard --- */
 
       // Can the user navigate between steps by pressing keyboard buttons?
-      keyNavigation: false,
+      keyNavigation: true,
 
       // When numeric keys 1 - 9 are pressed, Sequence will navigate to the
       // corresponding step
