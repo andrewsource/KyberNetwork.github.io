@@ -176,13 +176,23 @@ background-size: cover; }
 .card { margin-top:40px; }
 .card-block a { color:#b7b7b7; }
 .card-block:hover a { color: #188c92; }
-.partner { border-top: 1px solid #b7b7b7;border-bottom: 1px solid #b7b7b7;padding:2rem 0; }
+
+/* border-top: 1px solid #b7b7b7; */
+
+.partner {
+  border-bottom: 1px solid #b7b7b7;
+  padding:2rem 0;
+}
 .partner div div:last-child { margin-top:-10px; }
 .partner img { filter: grayscale(1); }
 .partner div div:hover img { filter: grayscale(0); }
 .seemore { margin: 40px auto 50px; }
 
-#contact { margin: 55px 0; }
+#contact {
+  background: url(img/chambi.png) center center no-repeat;
+  padding: 55px 0;
+}
+
 #contact h5 { margin-bottom: 30px; }
 #contact .circle { color:#fff;width:50px;height:50px;border-radius: 50%;background:#188c92;display: inline-block;text-align: center;line-height: 50px;margin-right:10px; }
 #contact .circle:hover { color:#188c92;background: #fff;transition: all ease-in-out .5s; }
