@@ -1,18 +1,3 @@
-/*
-Theme Name: Kyber Network
-Theme URI: https://latiosthinh.github.io/kyber/
-Author: WineAgency - ThomasNguyen
-Author URI: https://wineagency.vn/
-Description: Theme for Kyber Network
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: lann.vn
-Tags: creative theme, custom theme, ethereum exchange, bitcoin exchange, coin payment
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
 @font-face { font-family: 'ElegantIcons';
 	src:url('fonts/ElegantIcons.eot');
 	src:url('fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),url('fonts/ElegantIcons.woff') format('woff'),
@@ -136,6 +121,10 @@ background-size: cover; }
 .app-item-img.img2 { background: url(img/a2.png) center center no-repeat;background-size: contain; }
 .app-item-img.img3 { background: url(img/a3.png) center center no-repeat;background-size: contain;width: 70px; }
 .app-item-img.img4 { background: url(img/a4.png) center center no-repeat;background-size: contain;width: 130px; }
+
+#news .card img {
+  height: 213px;
+}
 
 #roadmap { margin:20px auto 0;padding-top: 10px;background:url(img/chambi.png) center center no-repeat;background-size: cover; }
 #roadmap h2 { padding-bottom: 10px;position: relative;margin:45px auto 85px; }
