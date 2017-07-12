@@ -33,8 +33,23 @@
   <header id="home" class="page-section">
     <div class="container-fluid">
       <div class="row">
-      <div class="col-md-12 text-right topbar">
-        <select onchange="if (this.value) window.location.href=this.value">
+        <div class="col-md-12 text-right topbar">
+          <select onchange="if (this.value) window.location.href=this.value">
+            <option value="http://kyber.network" selected="" style="color: #000">English</option>
+            <option value="http://cn.kyber.network" style="color: #000">中文</option>
+          </select>
+          <a href="https://twitter.com/kybernetwork" style="border-left:1px solid #fff;"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://github.com/kyberNetwork/"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="http://slack.kyber.network/"><i class="fa fa-slack" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <nav data-scroll-header class="navbar navbar-toggleable-md navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleCenteredNav" aria-controls="navbarsExampleCenteredNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="text-right" style="font-size: 22px; position: fixed; top: 8px; right: 20px;">
+        <select onchange="if (this.value) window.location.href=this.value" style="color: #3196ae;">
           <option value="http://kyber.network" selected="" style="color: #000">English</option>
           <option value="http://cn.kyber.network" style="color: #000">中文</option>
         </select>
@@ -42,13 +57,6 @@
         <a href="https://github.com/kyberNetwork/"><i class="fa fa-github" aria-hidden="true"></i></a>
         <a href="http://slack.kyber.network/"><i class="fa fa-slack" aria-hidden="true"></i></a>
       </div>
-
-    </div>
-    </div>
-    <nav data-scroll-header class="navbar navbar-toggleable-md navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleCenteredNav" aria-controls="navbarsExampleCenteredNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExampleCenteredNav">
         <img src="img/home_icon.png" alt="" class="top-logo mx-auto d-block">
         <ul class="navbar-nav">
