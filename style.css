@@ -247,6 +247,7 @@ background-size: cover; }
 	height: 52px;
 }
 
+.mobile-nav-links { display: none; }
 
 /*END OF BANNER STYLE CLASS*/
 @media screen and (max-width: 1400px) {
@@ -298,6 +299,7 @@ background-size: cover; }
 
 @media screen and (max-width: 640px) {
 	nav.navbar { margin-top:0; }
+  .mobile-nav-links { display: block !important; }
 	.topbar, .top-logo { display: none !important; }
 	ul.navbar-nav li { padding-left: 20px; }
 	.seq-title .container .row .top-slider.padding-0 { margin: 1rem; }
