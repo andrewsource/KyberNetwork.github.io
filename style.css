@@ -124,6 +124,7 @@ background-size: cover; }
 
 #news .card img {
   height: 213px;
+  object-fit: cover;
 }
 
 #roadmap { margin:20px auto 0;padding-top: 10px;background:url(img/chambi.png) center center no-repeat;background-size: cover; }
