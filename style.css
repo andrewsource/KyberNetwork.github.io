@@ -257,7 +257,7 @@ background-size: cover; }
 	.top-logo { height: 75px; }
 	.seq { height: 70vh !important; }
 	.seq-title h1 { font-size: 1.7rem; }
-	#about a { font-size: 11px;padding: .5rem; }
+	#about a { font-size: 9px;padding: .5rem; }
 	#about p { margin: 12px 0;font-size: 11px; }
 	.properties .prop-item { padding: 35px 40px; }
 	.compare-item li:not(:nth-child(1)) { padding-left: 2rem; }
@@ -331,6 +331,18 @@ background-size: cover; }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
+	#about a { font-size: 9px; }
+	#about p { font-size: 12px; }
+	.properties .prop-item { padding: 30px 20px;height: 270px; }
+	.prop-item h5 { font-size: 14px; }
+}
+@media screen and (min-resolution: 0dppx) {
+	#about a { font-size: 9px; }
+	#about p { font-size: 12px; }
+	.properties .prop-item { padding: 30px 20px;height: 270px; }
+	.prop-item h5 { font-size: 14px; }
+}
+@media screen and (min--moz-device-pixel-ratio: 0) {
 	#about a { font-size: 9px; }
 	#about p { font-size: 12px; }
 	.properties .prop-item { padding: 30px 20px;height: 270px; }
