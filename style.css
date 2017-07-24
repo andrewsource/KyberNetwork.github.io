@@ -249,7 +249,11 @@ background-size: cover; }
 }
 
 .mobile-nav-links { display: none; }
-
+.white-paper{
+	display: flex;
+	justify-content: space-between;
+}
+.partner img {max-width: 100px;}
 /*END OF BANNER STYLE CLASS*/
 @media screen and (max-width: 1400px) {
 	h2 { font-size: 24px;}
@@ -258,7 +262,7 @@ background-size: cover; }
 	.top-logo { height: 75px; }
 	.seq { height: 70vh !important; }
 	.seq-title h1 { font-size: 1.7rem; }
-	#about a { font-size: 9px;padding: .5rem; }
+	#about a { font-size: 11px;padding: .5rem; }
 	#about p { margin: 12px 0;font-size: 11px; }
 	.properties .prop-item { padding: 35px 40px; }
 	.compare-item li:not(:nth-child(1)) { padding-left: 2rem; }
