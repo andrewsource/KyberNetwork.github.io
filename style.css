@@ -253,7 +253,6 @@ background-size: cover; }
 	display: flex;
 	justify-content: space-between;
 }
-.partner img {max-width: 100px;}
 /*END OF BANNER STYLE CLASS*/
 @media screen and (max-width: 1400px) {
 	h2 { font-size: 24px;}
