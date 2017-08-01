@@ -283,7 +283,7 @@ background-size: cover; }
 }
 
 @media screen and (max-width: 900px) {
-	nav.navbar { position: fixed;top:0;z-index: 5000; }
+	nav.navbar { position: fixed;top:0;z-index: 10000; }
 	ul.navbar-nav { background: #fff;width: 90vw; }
 	.topbar { padding: 10px 20px 0 0; }
 	.top-logo { height: 80px;margin-top: 0px; }
