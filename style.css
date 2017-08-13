@@ -184,7 +184,6 @@ background-size: cover; }
   border-bottom: 1px solid #b7b7b7;
   padding:2rem 0;
 }
-.partner div div:last-child { margin-top:-10px; }
 .partner img { filter: grayscale(1); }
 .partner div div:hover img { filter: grayscale(0); }
 .seemore { margin: 40px auto 50px; }
