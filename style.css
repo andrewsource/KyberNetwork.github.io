@@ -88,6 +88,9 @@ background-size: cover; }
 #about h2 { padding-bottom: 10px;position: relative; }
 #about p { margin: 30px 0; }
 #about h4 { padding: 12px 0;margin: 80px auto; }
+.properties >div{
+	margin-top: 10px;
+}
 .properties .prop-item { background:#71bf9b;padding: 60px 20px;border-radius: 60px; }
 .properties h5 { color:#fff; }
 .properties .prop-item:hover { background:#3196ae;transition: all ease-in-out .2s; }
@@ -184,7 +187,7 @@ background-size: cover; }
   border-bottom: 1px solid #b7b7b7;
   padding:2rem 0;
 }
-.partner img { filter: grayscale(1); }
+.partner img { filter: grayscale(1); max-height: 80px}
 .partner div div:hover img { filter: grayscale(0); }
 .seemore { margin: 40px auto 50px; }
 
